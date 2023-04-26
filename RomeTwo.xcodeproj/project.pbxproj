@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FE494FF29F8C34C00F8CE2E /* RomeTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE494FE29F8C34C00F8CE2E /* RomeTwoApp.swift */; };
+		8FE4950129F8C34C00F8CE2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4950029F8C34C00F8CE2E /* ContentView.swift */; };
+		8FE4950329F8C34E00F8CE2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4950229F8C34E00F8CE2E /* Assets.xcassets */; };
+		8FE4950629F8C34E00F8CE2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4950529F8C34E00F8CE2E /* Preview Assets.xcassets */; };
+		8FE4951029F8C34E00F8CE2E /* RomeTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4950F29F8C34E00F8CE2E /* RomeTwoTests.swift */; };
+		8FE4951A29F8C34E00F8CE2E /* RomeTwoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4951929F8C34E00F8CE2E /* RomeTwoUITests.swift */; };
+		8FE4951C29F8C34E00F8CE2E /* RomeTwoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4951B29F8C34E00F8CE2E /* RomeTwoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FE4950C29F8C34E00F8CE2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE494F329F8C34C00F8CE2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE494FA29F8C34C00F8CE2E;
+			remoteInfo = RomeTwo;
+		};
+		8FE4951629F8C34E00F8CE2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE494F329F8C34C00F8CE2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE494FA29F8C34C00F8CE2E;
+			remoteInfo = RomeTwo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FE494FB29F8C34C00F8CE2E /* RomeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE494FE29F8C34C00F8CE2E /* RomeTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomeTwoApp.swift; sourceTree = "<group>"; };
+		8FE4950029F8C34C00F8CE2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8FE4950229F8C34E00F8CE2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FE4950529F8C34E00F8CE2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FE4950B29F8C34E00F8CE2E /* RomeTwoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomeTwoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE4950F29F8C34E00F8CE2E /* RomeTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomeTwoTests.swift; sourceTree = "<group>"; };
+		8FE4951529F8C34E00F8CE2E /* RomeTwoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomeTwoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE4951929F8C34E00F8CE2E /* RomeTwoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomeTwoUITests.swift; sourceTree = "<group>"; };
+		8FE4951B29F8C34E00F8CE2E /* RomeTwoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomeTwoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FE494F829F8C34C00F8CE2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE4950829F8C34E00F8CE2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE4951229F8C34E00F8CE2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FE494F229F8C34C00F8CE2E = {
+			isa = PBXGroup;
+			children = (
+				8FE494FD29F8C34C00F8CE2E /* RomeTwo */,
+				8FE4950E29F8C34E00F8CE2E /* RomeTwoTests */,
+				8FE4951829F8C34E00F8CE2E /* RomeTwoUITests */,
+				8FE494FC29F8C34C00F8CE2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FE494FC29F8C34C00F8CE2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FE494FB29F8C34C00F8CE2E /* RomeTwo.app */,
+				8FE4950B29F8C34E00F8CE2E /* RomeTwoTests.xctest */,
+				8FE4951529F8C34E00F8CE2E /* RomeTwoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FE494FD29F8C34C00F8CE2E /* RomeTwo */ = {
+			isa = PBXGroup;
+			children = (
+				8FE494FE29F8C34C00F8CE2E /* RomeTwoApp.swift */,
+				8FE4950029F8C34C00F8CE2E /* ContentView.swift */,
+				8FE4950229F8C34E00F8CE2E /* Assets.xcassets */,
+				8FE4950429F8C34E00F8CE2E /* Preview Content */,
+			);
+			path = RomeTwo;
+			sourceTree = "<group>";
+		};
+		8FE4950429F8C34E00F8CE2E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4950529F8C34E00F8CE2E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FE4950E29F8C34E00F8CE2E /* RomeTwoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4950F29F8C34E00F8CE2E /* RomeTwoTests.swift */,
+			);
+			path = RomeTwoTests;
+			sourceTree = "<group>";
+		};
+		8FE4951829F8C34E00F8CE2E /* RomeTwoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FE4951929F8C34E00F8CE2E /* RomeTwoUITests.swift */,
+				8FE4951B29F8C34E00F8CE2E /* RomeTwoUITestsLaunchTests.swift */,
+			);
+			path = RomeTwoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FE494FA29F8C34C00F8CE2E /* RomeTwo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE4951F29F8C34E00F8CE2E /* Build configuration list for PBXNativeTarget "RomeTwo" */;
+			buildPhases = (
+				8FE494F729F8C34C00F8CE2E /* Sources */,
+				8FE494F829F8C34C00F8CE2E /* Frameworks */,
+				8FE494F929F8C34C00F8CE2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RomeTwo;
+			productName = RomeTwo;
+			productReference = 8FE494FB29F8C34C00F8CE2E /* RomeTwo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FE4950A29F8C34E00F8CE2E /* RomeTwoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE4952229F8C34E00F8CE2E /* Build configuration list for PBXNativeTarget "RomeTwoTests" */;
+			buildPhases = (
+				8FE4950729F8C34E00F8CE2E /* Sources */,
+				8FE4950829F8C34E00F8CE2E /* Frameworks */,
+				8FE4950929F8C34E00F8CE2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE4950D29F8C34E00F8CE2E /* PBXTargetDependency */,
+			);
+			name = RomeTwoTests;
+			productName = RomeTwoTests;
+			productReference = 8FE4950B29F8C34E00F8CE2E /* RomeTwoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FE4951429F8C34E00F8CE2E /* RomeTwoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE4952529F8C34E00F8CE2E /* Build configuration list for PBXNativeTarget "RomeTwoUITests" */;
+			buildPhases = (
+				8FE4951129F8C34E00F8CE2E /* Sources */,
+				8FE4951229F8C34E00F8CE2E /* Frameworks */,
+				8FE4951329F8C34E00F8CE2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE4951729F8C34E00F8CE2E /* PBXTargetDependency */,
+			);
+			name = RomeTwoUITests;
+			productName = RomeTwoUITests;
+			productReference = 8FE4951529F8C34E00F8CE2E /* RomeTwoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FE494F329F8C34C00F8CE2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8FE494FA29F8C34C00F8CE2E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8FE4950A29F8C34E00F8CE2E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8FE494FA29F8C34C00F8CE2E;
+					};
+					8FE4951429F8C34E00F8CE2E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8FE494FA29F8C34C00F8CE2E;
+					};
+				};
+			};
+			buildConfigurationList = 8FE494F629F8C34C00F8CE2E /* Build configuration list for PBXProject "RomeTwo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FE494F229F8C34C00F8CE2E;
+			productRefGroup = 8FE494FC29F8C34C00F8CE2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FE494FA29F8C34C00F8CE2E /* RomeTwo */,
+				8FE4950A29F8C34E00F8CE2E /* RomeTwoTests */,
+				8FE4951429F8C34E00F8CE2E /* RomeTwoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FE494F929F8C34C00F8CE2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE4950629F8C34E00F8CE2E /* Preview Assets.xcassets in Resources */,
+				8FE4950329F8C34E00F8CE2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE4950929F8C34E00F8CE2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE4951329F8C34E00F8CE2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FE494F729F8C34C00F8CE2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE4950129F8C34C00F8CE2E /* ContentView.swift in Sources */,
+				8FE494FF29F8C34C00F8CE2E /* RomeTwoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE4950729F8C34E00F8CE2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE4951029F8C34E00F8CE2E /* RomeTwoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE4951129F8C34E00F8CE2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE4951C29F8C34E00F8CE2E /* RomeTwoUITestsLaunchTests.swift in Sources */,
+				8FE4951A29F8C34E00F8CE2E /* RomeTwoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FE4950D29F8C34E00F8CE2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE494FA29F8C34C00F8CE2E /* RomeTwo */;
+			targetProxy = 8FE4950C29F8C34E00F8CE2E /* PBXContainerItemProxy */;
+		};
+		8FE4951729F8C34E00F8CE2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE494FA29F8C34C00F8CE2E /* RomeTwo */;
+			targetProxy = 8FE4951629F8C34E00F8CE2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8FE4951D29F8C34E00F8CE2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FE4951E29F8C34E00F8CE2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FE4952029F8C34E00F8CE2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RomeTwo/Preview Content\"";
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studios.sanfelipe.RomeTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FE4952129F8C34E00F8CE2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RomeTwo/Preview Content\"";
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studios.sanfelipe.RomeTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FE4952329F8C34E00F8CE2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studios.sanfelipe.RomeTwoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RomeTwo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RomeTwo";
+			};
+			name = Debug;
+		};
+		8FE4952429F8C34E00F8CE2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studios.sanfelipe.RomeTwoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RomeTwo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RomeTwo";
+			};
+			name = Release;
+		};
+		8FE4952629F8C34E00F8CE2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studios.sanfelipe.RomeTwoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RomeTwo;
+			};
+			name = Debug;
+		};
+		8FE4952729F8C34E00F8CE2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studios.sanfelipe.RomeTwoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RomeTwo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FE494F629F8C34C00F8CE2E /* Build configuration list for PBXProject "RomeTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE4951D29F8C34E00F8CE2E /* Debug */,
+				8FE4951E29F8C34E00F8CE2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE4951F29F8C34E00F8CE2E /* Build configuration list for PBXNativeTarget "RomeTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE4952029F8C34E00F8CE2E /* Debug */,
+				8FE4952129F8C34E00F8CE2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE4952229F8C34E00F8CE2E /* Build configuration list for PBXNativeTarget "RomeTwoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE4952329F8C34E00F8CE2E /* Debug */,
+				8FE4952429F8C34E00F8CE2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE4952529F8C34E00F8CE2E /* Build configuration list for PBXNativeTarget "RomeTwoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE4952629F8C34E00F8CE2E /* Debug */,
+				8FE4952729F8C34E00F8CE2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FE494F329F8C34C00F8CE2E /* Project object */;
+}
