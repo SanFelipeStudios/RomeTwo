@@ -1,3 +1,4 @@
+import AuthenticationServices
 import RealmSwift
 import SwiftUI
 
@@ -93,23 +94,9 @@ extension ItemGroup {
 
 /// The main content view if not using Sync.
 struct LocalOnlyContentView: View {
-    @State var searchFilter: String = ""
-    // Implicitly use the default realm's objects(ItemGroup.self)
-    @ObservedResults(ItemGroup.self) var itemGroups
     
     var body: some View {
-        if let itemGroup = itemGroups.first {
-            // Pass the ItemGroup objects to a view further
-            // down the hierarchy
-            ItemsView(itemGroup: itemGroup)
-        } else {
-            // For this small app, we only want one itemGroup in the realm.
-            // You can expand this app to support multiple itemGroups.
-            // For now, if there is no itemGroup, add one here.
-            ProgressView().onAppear {
-                $itemGroups.append(ItemGroup())
-            }
-        }
+        Text("Could not load application. Check your connection and try again")
     }
 }
 
@@ -164,15 +151,19 @@ struct OpenSyncedRealmView: View {
         // Because we are setting the `ownerId` to the `user.id`, we need
         // access to the app's current user in this view.
         let user = app?.currentUser
+        
         switch asyncOpen {
+            
         // Starting the Realm.asyncOpen process.
         // Show a progress view.
         case .connecting:
             ProgressView()
+            
         // Waiting for a user to be logged in before executing
         // Realm.asyncOpen.
         case .waitingForUser:
             ProgressView("Waiting for user to log in...")
+            
         // The realm has been opened and is ready for use.
         // Show the content view.
         case .open(let realm):
@@ -186,10 +177,12 @@ struct OpenSyncedRealmView: View {
                 }
                 return realm.objects(ItemGroup.self).first!
             }(), leadingBarButton: AnyView(LogoutButton())).environment(\.realm, realm)
-            // The realm is currently being downloaded from the server.
-            // Show a progress view.
+            
+        // The realm is currently being downloaded from the server.
+        // Show a progress view.
         case .progress(let progress):
             ProgressView(progress)
+            
         // Opening the Realm failed.
         // Show an error view.
         case .error(let error):
@@ -211,6 +204,13 @@ struct ErrorView: View {
 // MARK: Authentication Views
 /// Represents the login screen. We will have a button to log in anonymously.
 struct LoginView: View {
+
+    @AppStorage("userId") var userId: String = ""
+
+    private var isSignedIn: Bool {
+        !userId.isEmpty
+    }
+
     // Hold an error if one occurs so we can display it.
     @State var error: Error?
     
@@ -222,27 +222,114 @@ struct LoginView: View {
             if isLoggingIn {
                 ProgressView()
             }
+            
             if let error = error {
                 Text("Error: \(error.localizedDescription)")
             }
-            Button("Log in anonymously") {
-                // Button pressed, so log in
-                isLoggingIn = true
-                Task {
-                    do {
-                        let user = try await app!.login(credentials: .anonymous)
-                        // Other views are observing the app and will detect
-                        // that the currentUser has changed. Nothing more to do here.
-                        print("Logged in as user with id: \(user.id)")
-                    } catch {
-                        print("Failed to log in: \(error.localizedDescription)")
-                        // Set error to observed property so it can be displayed
-                        self.error = error
-                        return
-                    }
-                }
-            }.disabled(isLoggingIn)
+
+            if !isSignedIn {
+                SignInWithAppleButtonView(isLoggingIn: $isLoggingIn)
+                SignInAnonymouslyButtonView(isLoggingIn: $isLoggingIn, error: $error)
+            }
         }
+    }
+}
+
+struct SignInAnonymouslyButtonView: View {
+    @Binding var isLoggingIn: Bool
+    @Binding var error: Error?
+    
+    var body: some View {
+        Button("Log in anonymously") {
+            // Button pressed, so log in
+            isLoggingIn = true
+            Task {
+                do {
+                    let user = try await app!.login(credentials: .anonymous)
+                    // Other views are observing the app and will detect
+                    // that the currentUser has changed. Nothing more to do here.
+                    print("Logged in as user with id: \(user.id)")
+                } catch {
+                    print("Failed to log in: \(error.localizedDescription)")
+                    // Set error to observed property so it can be displayed
+                    self.error = error
+                    return
+                }
+            }
+        }.disabled(isLoggingIn)
+    }
+}
+
+struct SignInWithAppleButtonView: View {
+    @Binding var isLoggingIn: Bool
+    
+    // Ability to support light and dark mode
+    // Here we are Observing the 'colorScheme' environment
+    @Environment(\.colorScheme) var colorScheme
+
+    @AppStorage("userId") var userId: String = ""
+    @AppStorage("email") var email: String = ""
+    @AppStorage("firstName") var firstName: String = ""
+    @AppStorage("lastName") var lastName: String = ""
+    
+    var body: some View {
+        SignInWithAppleButton(.continue) { request in
+            isLoggingIn = true
+            
+            // What scopes do we want to get out of the request (What user info)
+            request.requestedScopes = [.email, .fullName]
+
+        } onCompletion: { result in
+            switch result {
+            case .success(let auth):
+                
+                guard let credentials = auth.credential as? ASAuthorizationAppleIDCredential, let identityToken = credentials.identityToken, let identityTokenString = String(data: identityToken, encoding: .utf8) else { return }
+
+                switch auth.credential {
+                case let credential as ASAuthorizationAppleIDCredential:
+                    // The userId is the only information your app gets if the user deletes your app and signs in again
+                    self.userId = credential.user
+                    
+                    // This information is only collected the FIRST time a user signs in to your app
+                    // Make sure to cache these in either your app or your database
+                    self.email = credential.email ?? ""
+                    self.firstName = credential.fullName?.givenName ?? ""
+                    self.lastName = credential.fullName?.familyName ?? ""
+                    
+                    sign(token: identityTokenString)
+                    
+                default:
+                    break
+                }
+
+            case .failure(let error):
+                print(error)
+            }
+
+        }
+        .signInWithAppleButtonStyle(
+                colorScheme == .dark ? .white : .black)
+        .frame(height: 50)
+        .padding()
+        .cornerRadius(8)
+        .disabled(isLoggingIn)
+    }
+    
+    func sign(token: String) {
+        
+        // Fetch IDToken via the Apple SDK
+        let credentials = Credentials.apple(idToken: token)
+        app?.login(credentials: credentials) { (result) in
+            switch result {
+            case .failure(let error):
+                print("Login failed: \(error.localizedDescription)")
+            case .success(let user):
+                print("Successfully logged in as user \(user)")
+                // Now logged in, do something with user
+                // Remember to dispatch to main if you are doing anything on the UI thread
+            }
+        }
+
     }
 }
 
