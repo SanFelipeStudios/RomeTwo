@@ -1,9 +1,24 @@
 import AuthenticationServices
 import RealmSwift
 import SwiftUI
+import os
+
+extension View {
+    func Print(_ vars: Any...) -> some View {
+        var log = ""
+        for v in vars { log.append("\(v) | ") }
+        print(log)
+        return EmptyView()
+    }
+}
+
+extension DefaultStringInterpolation {
+  mutating func appendInterpolation<T>(_ optional: T?) {
+    appendInterpolation(String(describing: optional))
+  }
+}
 
 // MARK: Models
-
 /// Random adjectives for more interesting demo item names
 let randomAdjectives = [
     "fluffy", "classy", "bumpy", "bizarre", "wiggly", "quick", "sudden",
@@ -106,9 +121,11 @@ struct LocalOnlyContentView: View {
 struct SyncContentView: View {
     // Observe the Realm app object in order to react to login state changes.
     @ObservedObject var app: RealmSwift.App
-
+    
     var body: some View {
         if let user = app.currentUser {
+            Print(String(describing: SyncContentView.self),
+                  "User is logged in: \(app.currentUser?.id)")
             // Create a `flexibleSyncConfiguration` with `initialSubscriptions`.
             // We'll inject this configuration as an environment value to use when opening the realm
             // in the next view, and the realm will open with these initial subscriptions.
@@ -135,6 +152,8 @@ struct SyncContentView: View {
             OpenSyncedRealmView()
                 .environment(\.realmConfiguration, config)
         } else {
+            Print(String(describing: SyncContentView.self),
+                  "User is logged out.")
             // If there is no user logged in, show the login view.
             LoginView()
         }
@@ -218,16 +237,27 @@ struct LoginView: View {
     @State var isLoggingIn = false
 
     var body: some View {
+        
+        
         VStack {
             if isLoggingIn {
+                let _ = Print(String(describing: LoginView.self),
+                      "User is logging in...")
                 ProgressView()
+            } else {
+                let _ = Print(String(describing: LoginView.self),
+                      "User is NOT logging in...", "isSignedIn: \(isSignedIn)")
             }
             
             if let error = error {
+                let _ = Print(String(describing: LoginView.self),
+                      "Error in Login View: \(error.localizedDescription)")
                 Text("Error: \(error.localizedDescription)")
             }
 
             if !isSignedIn {
+                let _ = Print(String(describing: LoginView.self),
+                      "Awaiting for user sign in")
                 SignInWithAppleButtonView(isLoggingIn: $isLoggingIn)
                 SignInAnonymouslyButtonView(isLoggingIn: $isLoggingIn, error: $error)
             }
@@ -248,9 +278,12 @@ struct SignInAnonymouslyButtonView: View {
                     let user = try await app!.login(credentials: .anonymous)
                     // Other views are observing the app and will detect
                     // that the currentUser has changed. Nothing more to do here.
-                    print("Logged in as user with id: \(user.id)")
+                    let _ = Print(String(describing: SignInAnonymouslyButtonView.self),
+                                  "Logged in as user with id: \(user.id)")
+                    
                 } catch {
-                    print("Failed to log in: \(error.localizedDescription)")
+                    let _ = Print(String(describing: SignInAnonymouslyButtonView.self),
+                                  "Failed to log in: \(error.localizedDescription)")
                     // Set error to observed property so it can be displayed
                     self.error = error
                     return
@@ -303,7 +336,8 @@ struct SignInWithAppleButtonView: View {
                 }
 
             case .failure(let error):
-                print(error)
+                let _ = Print(String(describing: SignInWithAppleButtonView.self),
+                      "Error: \(error)")
             }
 
         }
@@ -322,9 +356,11 @@ struct SignInWithAppleButtonView: View {
         app?.login(credentials: credentials) { (result) in
             switch result {
             case .failure(let error):
-                print("Login failed: \(error.localizedDescription)")
+                let _ = Print(String(describing: SignInWithAppleButtonView.self),
+                      "Login failed: \(error.localizedDescription)")
             case .success(let user):
-                print("Successfully logged in as user \(user)")
+                let _ = Print(String(describing: SignInWithAppleButtonView.self),
+                      "Successfully logged in as user: \(user)")
                 // Now logged in, do something with user
                 // Remember to dispatch to main if you are doing anything on the UI thread
             }
@@ -341,6 +377,7 @@ struct LoginView_Previews: PreviewProvider {
 
 /// A button that handles logout requests.
 struct LogoutButton: View {
+    @AppStorage("userId") var userId: String = ""
     @State var isLoggingOut = false
 
     var body: some View {
@@ -351,11 +388,13 @@ struct LogoutButton: View {
             isLoggingOut = true
             Task {
                 do {
+                    let _ = Print(String(describing: LogoutButton.self), "Attempting to log out...")
                     try await app!.currentUser!.logOut()
+                    self.userId = ""
                     // Other views are observing the app and will detect
                     // that the currentUser has changed. Nothing more to do here.
                 } catch {
-                    print("Error logging out: \(error.localizedDescription)")
+                    let _ = Print("Error logging out:", error.localizedDescription)
                 }
             }
         }.disabled(app!.currentUser == nil || isLoggingOut)
