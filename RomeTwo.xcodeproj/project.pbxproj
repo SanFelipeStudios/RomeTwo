@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A41A61C2A1588C600D65755 /* CurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41A61B2A1588C600D65755 /* CurationView.swift */; };
 		3A41A6242A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A41A6232A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf */; };
+		3A797DEA2A1EAB08004432D6 /* NotoSansTamil-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */; };
 		3AB2B6EC2A0857FA00EEF750 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6EB2A0857FA00EEF750 /* Realm */; };
 		3AB2B6EE2A0857FA00EEF750 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6ED2A0857FA00EEF750 /* RealmSwift */; };
 		3AE858602A15A0B3008444B3 /* NotoSansTamil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */; };
@@ -45,6 +46,7 @@
 		3A41A6222A1597EE00D65755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3A41A6232A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-ExtraBold.ttf"; sourceTree = "<group>"; };
 		3A6C58292A10210B00DFBCCF /* RomeTwo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RomeTwo.entitlements; sourceTree = "<group>"; };
+		3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Light.ttf"; sourceTree = "<group>"; };
 		3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Regular.ttf"; sourceTree = "<group>"; };
 		3AE8585F2A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-SemiBold.ttf"; sourceTree = "<group>"; };
 		3AE858642A191A34008444B3 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		3A41A61F2A15924400D65755 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */,
 				3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */,
 				3AE8585F2A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf */,
 				3A41A6232A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf */,
@@ -285,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A797DEA2A1EAB08004432D6 /* NotoSansTamil-Light.ttf in Resources */,
 				3AE858602A15A0B3008444B3 /* NotoSansTamil-Regular.ttf in Resources */,
 				8FE4950629F8C34E00F8CE2E /* Preview Assets.xcassets in Resources */,
 				3A41A6242A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf in Resources */,

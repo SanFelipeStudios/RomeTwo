@@ -18,7 +18,7 @@ struct ImageOverlay: View {
         }
         .padding(.horizontal)
         .padding(.bottom, geometry.size.height * 0.18)
-        .font(.custom("NotoSansTamil-ExtraBold", size: 40))
+        .font(.custom("NotoSansTamil-ExtraBold", size: 42))
         .foregroundColor(.white)
     }
 }
@@ -42,33 +42,51 @@ struct CurationBanner: View {
     var geometry: GeometryProxy
     
     var body: some View {
-        ZStack {
+        HStack() {
+            Spacer()
             
             NavigationLink(destination: ProductView()) {
                 HStack {
                     Image("HadesIcon")
                         .resizable()
-                        .frame(width: 45, height: 45)
-                        .cornerRadius(1)
-                    Text("Hades")
-                    Text("Roguelike")
+                        .frame(width: 48, height: 48)
+                        .cornerRadius(10)
+                    
+                    VStack(alignment: .leading) {
+                        Text("Hades")
+                            .font(.custom("NotoSansTamil-Regular", size: 20))
+                        Text("Roguelike")
+                            .font(.custom("NotoSansTamil-Light", size: 10))
+                    }
+                    .foregroundColor(.white)
                 }
-                .font(.custom("NotoSansTamil-Regular", size: 20))
-                .foregroundColor(.white)
             }
             
-            HStack {
-                // TODO: Check if this spacer frame works on different sized devices
+            Group {
                 Spacer()
-                    .frame(maxWidth: 250)
-                Button {
-                    // TODO: Ability to buy the product
-                } label: {
-                    Text("GET")
-                }
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
             }
+            
+            Button {
+                // TODO: Ability to buy the product
+            } label: {
+                Text("GET")
+            }
+            .padding(.horizontal, 10)
+            .background(.white)
+            .clipShape(Capsule())
+            
+            Spacer()
         }
-        .frame(width: geometry.size.width, height: 75)
+        .frame(maxWidth: .infinity, minHeight: 80)
         .background(Color(("Curation Average")))
     }
 }
