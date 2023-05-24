@@ -8,29 +8,39 @@
 import SwiftUI
 
 struct ImageOverlay: View {
+    var geometry: GeometryProxy
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
+        VStack(alignment: .leading, spacing: -15) {
             Text("APP")
             Text("OF THE")
             Text("DAY")
         }
-        .font(.custom("NotoSansTamil-ExtraBold", size: 60))
+        .padding(.horizontal)
+        .padding(.bottom, geometry.size.height * 0.18)
+        .font(.custom("NotoSansTamil-ExtraBold", size: 40))
         .foregroundColor(.white)
     }
 }
 
 struct CurationImage: View {
+    var geometry: GeometryProxy
+    
     var body: some View {
         VStack(spacing: 0) {
             Image("Zagreus")
                 .resizable()
-                .scaledToFit()
-                .overlay(ImageOverlay(), alignment: .bottomLeading)
+                .scaledToFill()
+                .overlay(ImageOverlay(geometry: geometry), alignment: .bottomLeading)
+                .frame(maxWidth: .infinity, maxHeight: geometry.size.height * 0.6)
+                .clipped()
         }
     }
 }
 
 struct CurationBanner: View {
+    var geometry: GeometryProxy
+    
     var body: some View {
         ZStack {
             
@@ -38,7 +48,8 @@ struct CurationBanner: View {
                 HStack {
                     Image("HadesIcon")
                         .resizable()
-                        .frame(width: 32.0, height: 32.0)
+                        .frame(width: 45, height: 45)
+                        .cornerRadius(1)
                     Text("Hades")
                     Text("Roguelike")
                 }
@@ -57,13 +68,12 @@ struct CurationBanner: View {
                 }
             }
         }
-        .frame(width: .infinity)
+        .frame(width: geometry.size.width, height: 75)
         .background(Color(("Curation Average")))
     }
 }
 
 struct CurationDescription: View  {
-    var geometry: GeometryProxy
     
     var body: some View {
         VStack(spacing: 25) {
@@ -74,8 +84,8 @@ struct CurationDescription: View  {
             
             Text("**UNLEASH THE FURY OF OLYMPUS:**").foregroundColor(.white) + Text(" The Olympians have your back! Meet Zeus, Athena, Poseidon, and many more, and choose from their dozens of powerful Boons that enhance your abilities. There are thousands of viable character builds to discover as you go.")
         }
-        .font(.custom("NotoSansTamil-Regular", size: 25))
-        .frame(maxWidth: geometry.size.width * 0.9)
+        .font(.custom("NotoSansTamil-Regular", size: 20))
+        .padding(.horizontal)
         .foregroundColor(Color("Curation Description Text"))
         
     }
@@ -86,9 +96,9 @@ struct CurationView: View {
         GeometryReader { geometry in
             ScrollView {
                 VStack (spacing: 0) {
-                    CurationImage()
-                    CurationBanner()
-                    CurationDescription(geometry: geometry)
+                    CurationImage(geometry: geometry)
+                    CurationBanner(geometry: geometry)
+                    CurationDescription()
                 }
             }
             .background(Color("Curation Background")).edgesIgnoringSafeArea([.all])

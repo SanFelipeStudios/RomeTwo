@@ -13,12 +13,13 @@ let app: RealmSwift.App? = RealmSwift.App(id: "rometwo-pxipu")
 struct RomeTwoApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            // Using Sync?
-            if let app = app {
-                SyncContentView(app: app)
-            } else {
-                LocalOnlyContentView()
-            }
+//            // Using Sync?
+//            if let app = app {
+//                SyncContentView(app: app)
+//            } else {
+//                LocalOnlyContentView()
+//            }
+            CurationView()
         }
     }
 }
