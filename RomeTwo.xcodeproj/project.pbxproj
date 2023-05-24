@@ -13,6 +13,7 @@
 		3AB2B6EE2A0857FA00EEF750 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6ED2A0857FA00EEF750 /* RealmSwift */; };
 		3AE858602A15A0B3008444B3 /* NotoSansTamil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */; };
 		3AE858612A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8585F2A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf */; };
+		3AE858652A191A34008444B3 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE858642A191A34008444B3 /* ProductView.swift */; };
 		8FE494FF29F8C34C00F8CE2E /* RomeTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE494FE29F8C34C00F8CE2E /* RomeTwoApp.swift */; };
 		8FE4950129F8C34C00F8CE2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4950029F8C34C00F8CE2E /* ContentView.swift */; };
 		8FE4950329F8C34E00F8CE2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4950229F8C34E00F8CE2E /* Assets.xcassets */; };
@@ -43,9 +44,10 @@
 		3A41A61B2A1588C600D65755 /* CurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationView.swift; sourceTree = "<group>"; };
 		3A41A6222A1597EE00D65755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3A41A6232A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3A6C58292A10210B00DFBCCF /* RomeTwo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RomeTwo.entitlements; sourceTree = "<group>"; };
 		3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Regular.ttf"; sourceTree = "<group>"; };
 		3AE8585F2A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-SemiBold.ttf"; sourceTree = "<group>"; };
-		3A6C58292A10210B00DFBCCF /* RomeTwo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RomeTwo.entitlements; sourceTree = "<group>"; };
+		3AE858642A191A34008444B3 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		8FE494FB29F8C34C00F8CE2E /* RomeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE494FE29F8C34C00F8CE2E /* RomeTwoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomeTwoApp.swift; sourceTree = "<group>"; };
 		8FE4950029F8C34C00F8CE2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		3AE858632A191A1B008444B3 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				3AE858642A191A34008444B3 /* ProductView.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		8FE494F229F8C34C00F8CE2E = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 				3A41A61F2A15924400D65755 /* Fonts */,
 				3A41A61A2A1588AD00D65755 /* Curation */,
 				3A6C58292A10210B00DFBCCF /* RomeTwo.entitlements */,
+				3AE858632A191A1B008444B3 /* Product */,
 				8FE494FE29F8C34C00F8CE2E /* RomeTwoApp.swift */,
 				8FE4950029F8C34C00F8CE2E /* ContentView.swift */,
 				8FE4950229F8C34E00F8CE2E /* Assets.xcassets */,
@@ -303,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE858652A191A34008444B3 /* ProductView.swift in Sources */,
 				8FE4950129F8C34C00F8CE2E /* ContentView.swift in Sources */,
 				8FE494FF29F8C34C00F8CE2E /* RomeTwoApp.swift in Sources */,
 				3A41A61C2A1588C600D65755 /* CurationView.swift in Sources */,
@@ -461,15 +473,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = RomeTwo/RomeTwo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RomeTwo/Preview Content\"";
-				DEVELOPMENT_TEAM = 6525SMR8C7;
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RomeTwo/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,15 +505,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = RomeTwo/RomeTwo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RomeTwo/Preview Content\"";
-				DEVELOPMENT_TEAM = 6525SMR8C7;
+				DEVELOPMENT_TEAM = YTNTXSNQQT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_FILE = RomeTwo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
