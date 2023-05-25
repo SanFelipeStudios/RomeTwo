@@ -7,6 +7,93 @@
 
 import SwiftUI
 
+// ### Code Styling ###
+
+extension Image {
+    func curationImageModifier(geometry: GeometryProxy) -> some View {
+        self
+            .resizable()
+            .scaledToFill()
+            .overlay(ImageOverlay(geometry: geometry), alignment: .bottomLeading)
+            .frame(maxWidth: .infinity, maxHeight: geometry.size.height * 0.6)
+            .clipped()
+    }
+    
+    func appIconModifier() -> some View {
+        self
+            .resizable()
+            .frame(width: 48, height: 48)
+            .cornerRadius(10)
+    }
+}
+
+extension View {
+    // Curation View
+    func curationModifier() -> some View {
+        self
+            .background(Color("Curation Background")).edgesIgnoringSafeArea([.all])
+    }
+    
+    // Curation Image
+    func headerImageOverlayStyle() -> some View {
+        self
+            .font(.custom("NotoSansTamil-ExtraBold", size: 42))
+            .foregroundColor(.white)
+    }
+    
+    func headerImageModifier(geometry: GeometryProxy) -> some View {
+        self
+            .padding(.horizontal)
+            .padding(.bottom, geometry.size.height * 0.18)
+    }
+    
+    // Curation Banner
+    func appTitleStyle() -> some View {
+        self
+            .font(.custom("NotoSansTamil-Regular", size: 20))
+            .foregroundColor(.white)
+    }
+    
+    func appGenreStyle() -> some View {
+        self
+            .font(.custom("NotoSansTamil-Light", size: 10))
+            .foregroundColor(.white)
+    }
+    
+    func purchaseButtonStyle() -> some View {
+        self
+            .font(.custom("NotoSansTamil-ExtraBold", size: 20))
+            .foregroundColor(.blue)
+    }
+    
+    func purchaseButtonModifier() -> some View {
+        self
+            .background(.white)
+            .clipShape(Capsule())
+    }
+    
+    func bannerModifier() -> some View {
+        self
+            .frame(maxWidth: .infinity, minHeight: 80)
+            .background(Color(("Curation Average")))
+    }
+    
+    // Curation Description
+    func descriptionStyle() -> some View {
+        self
+            .font(.custom("NotoSansTamil-Regular", size: 20))
+            .foregroundColor(Color("Curation Description Text"))
+    }
+    
+    func descriptionModifier() -> some View {
+        self
+            .padding(.horizontal)
+    }
+    
+}
+
+// ### Code Logic ###
+
 struct ImageOverlay: View {
     var geometry: GeometryProxy
     
@@ -16,10 +103,8 @@ struct ImageOverlay: View {
             Text("OF THE")
             Text("DAY")
         }
-        .padding(.horizontal)
-        .padding(.bottom, geometry.size.height * 0.18)
-        .font(.custom("NotoSansTamil-ExtraBold", size: 42))
-        .foregroundColor(.white)
+        .headerImageModifier(geometry: geometry)
+        .headerImageOverlayStyle()
     }
 }
 
@@ -29,11 +114,7 @@ struct CurationImage: View {
     var body: some View {
         VStack(spacing: 0) {
             Image("Zagreus")
-                .resizable()
-                .scaledToFill()
-                .overlay(ImageOverlay(geometry: geometry), alignment: .bottomLeading)
-                .frame(maxWidth: .infinity, maxHeight: geometry.size.height * 0.6)
-                .clipped()
+                .curationImageModifier(geometry: geometry)
         }
     }
 }
@@ -48,46 +129,33 @@ struct CurationBanner: View {
             NavigationLink(destination: ProductView()) {
                 HStack {
                     Image("HadesIcon")
-                        .resizable()
-                        .frame(width: 48, height: 48)
-                        .cornerRadius(10)
+                        .appIconModifier()
                     
                     VStack(alignment: .leading) {
                         Text("Hades")
-                            .font(.custom("NotoSansTamil-Regular", size: 20))
+                            .appTitleStyle()
                         Text("Roguelike")
-                            .font(.custom("NotoSansTamil-Light", size: 10))
+                            .appGenreStyle()
                     }
-                    .foregroundColor(.white)
                 }
             }
             
-            Group {
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
+            ForEach (0..<10) { i in
                 Spacer()
             }
             
+            // Purchase Button
             Button {
                 // TODO: Ability to buy the product
             } label: {
                 Text("GET")
+                    .purchaseButtonStyle()
             }
-            .padding(.horizontal, 10)
-            .background(.white)
-            .clipShape(Capsule())
+            .purchaseButtonModifier()
             
             Spacer()
         }
-        .frame(maxWidth: .infinity, minHeight: 80)
-        .background(Color(("Curation Average")))
+        .bannerModifier()
     }
 }
 
@@ -102,9 +170,8 @@ struct CurationDescription: View  {
             
             Text("**UNLEASH THE FURY OF OLYMPUS:**").foregroundColor(.white) + Text(" The Olympians have your back! Meet Zeus, Athena, Poseidon, and many more, and choose from their dozens of powerful Boons that enhance your abilities. There are thousands of viable character builds to discover as you go.")
         }
-        .font(.custom("NotoSansTamil-Regular", size: 20))
-        .padding(.horizontal)
-        .foregroundColor(Color("Curation Description Text"))
+        .descriptionStyle()
+        .descriptionModifier()
         
     }
 }
@@ -119,7 +186,7 @@ struct CurationView: View {
                     CurationDescription()
                 }
             }
-            .background(Color("Curation Background")).edgesIgnoringSafeArea([.all])
+            .curationModifier()
         }
     }
 }
