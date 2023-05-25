@@ -14,13 +14,11 @@ struct RomeTwoApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
             // Using Sync?
-//            if let app = app {
-//                SyncContentView(app: app)
-//            } else {
-//                LocalOnlyContentView()
-//            }
-            // TODO: REMOVE
-            CurationView()
+            if let app = app {
+                SyncContentView(app: app)
+            } else {
+                LocalOnlyContentView()
+            }
         }
     }
 }
