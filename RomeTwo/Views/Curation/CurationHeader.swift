@@ -67,8 +67,12 @@ struct CurationHeader: View {
 
 struct CurationImage_Previews: PreviewProvider {
     static var previews: some View {
-        GeometryReader { geometry in
-            CurationHeader(geometry: geometry)
+        ForEach([DeviceName.iPhone_8.rawValue, DeviceName.iPhone_12_mini.rawValue, DeviceName.iPhone_14_Pro_Max.rawValue], id: \.self) { device in
+            GeometryReader { geometry in
+                CurationHeader(geometry: geometry)
+            }
+            .previewDevice(PreviewDevice(rawValue: device))
+            .previewDisplayName(device)
         }
     }
 }

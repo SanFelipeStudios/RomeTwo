@@ -40,9 +40,14 @@ struct CurationDescription: View  {
 
 struct CurationDescription_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollView {
-            CurationDescription()
-                .edgesIgnoringSafeArea([.all])
+        ForEach([DeviceName.iPhone_8.rawValue, DeviceName.iPhone_12_mini.rawValue, DeviceName.iPhone_14_Pro_Max.rawValue], id: \.self) { device in
+            ScrollView {
+                CurationDescription()
+                    .edgesIgnoringSafeArea([.all])
+            }
+            .previewDevice(PreviewDevice(rawValue: device))
+            .previewDisplayName(device)
         }
+        
     }
 }

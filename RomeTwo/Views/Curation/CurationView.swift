@@ -32,8 +32,10 @@ struct CurationView: View {
 
 struct CurationView_Previews: PreviewProvider {
     static var previews: some View {
-        CurationView()
-//            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
-//            .previewDisplayName("iPhone 14 Pro Max")
+        ForEach([DeviceName.iPhone_8.rawValue, DeviceName.iPhone_12_mini.rawValue, DeviceName.iPhone_14_Pro_Max.rawValue], id: \.self) { device in
+            CurationView()
+                .previewDevice(PreviewDevice(rawValue: device))
+                .previewDisplayName(device)
+        }
     }
 }

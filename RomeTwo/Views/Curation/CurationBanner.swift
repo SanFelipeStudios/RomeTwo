@@ -21,19 +21,6 @@ extension View {
             .foregroundColor(.white)
     }
     
-    func purchaseButtonStyle() -> some View {
-        self
-            .font(.custom("NotoSansTamil-ExtraBold", size: 20))
-            .foregroundColor(.blue)
-    }
-    
-    func purchaseButtonModifier() -> some View {
-        self
-            .frame(width: 80, height: 30)
-            .background(.white)
-            .clipShape(Capsule())
-    }
-    
     func bannerModifier() -> some View {
         self
             .frame(maxWidth: .infinity, minHeight: 80)
@@ -60,14 +47,7 @@ struct CurationBanner: View {
             
             Spacer()
             
-            // Purchase Button
-            Button {
-                // TODO: Ability to buy the product
-            } label: {
-                Text("GET")
-                    .purchaseButtonStyle()
-            }
-            .purchaseButtonModifier()
+            PurchaseButton()
             
         }
         .padding()
@@ -77,6 +57,10 @@ struct CurationBanner: View {
 
 struct CurationBanner_Previews: PreviewProvider {
     static var previews: some View {
-        CurationBanner()
+        ForEach([DeviceName.iPhone_8.rawValue, DeviceName.iPhone_12_mini.rawValue, DeviceName.iPhone_14_Pro_Max.rawValue], id: \.self) { device in
+            CurationBanner()
+                .previewDevice(PreviewDevice(rawValue: device))
+                .previewDisplayName(device)
+        }
     }
 }
