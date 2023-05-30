@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension View {
-    // Curation View
     func curationModifier() -> some View {
         self
             .background(Color("Curation Background")).edgesIgnoringSafeArea([.all])

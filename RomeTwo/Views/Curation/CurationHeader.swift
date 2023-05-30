@@ -26,7 +26,6 @@ extension Image {
 }
 
 extension View {
-    // Curation Image
     func headerImageOverlayStyle() -> some View {
         self
             .font(.custom("NotoSansTamil-ExtraBold", size: 42))
