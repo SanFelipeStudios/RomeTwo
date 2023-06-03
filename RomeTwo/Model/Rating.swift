@@ -12,7 +12,7 @@ final class Rating: Object, ObjectKeyIdentifiable {
     
     @Persisted var title: String
     
-    @Persisted var detail: String
+    @Persisted var details: String
     
     @Persisted var recommend: Bool
     

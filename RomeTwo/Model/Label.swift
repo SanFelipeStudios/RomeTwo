@@ -12,6 +12,6 @@ final class Label: Object, ObjectKeyIdentifiable {
     
     @Persisted var name: String
     
-    @Persisted var detail: String
+    @Persisted var details: String
     
 }

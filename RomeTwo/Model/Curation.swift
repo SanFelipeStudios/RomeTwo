@@ -18,7 +18,7 @@ final class Curation: Object, ObjectKeyIdentifiable {
     
     @Persisted var subheading: String
     
-    @Persisted var body: String
+    @Persisted var details: String
 }
 
 
