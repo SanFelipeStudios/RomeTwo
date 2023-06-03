@@ -20,9 +20,10 @@ final class User: Object, ObjectKeyIdentifiable {
     
     @Persisted var phone: String
     
-    @Persisted var cart: Object
-    
-    @Persisted var address: Object
+    // TODO: Implement Objects
+//    @Persisted var cart: Object
+//
+//    @Persisted var address: Object
     
     // List of Game Ids
     @Persisted var library: List<ObjectId>
