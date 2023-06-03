@@ -10,7 +10,7 @@ import RealmSwift
 final class Curation: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     
-    @Persisted var gameID: ObjectId
+    @Persisted var gameId: ObjectId
     
     @Persisted var heading: String
     
