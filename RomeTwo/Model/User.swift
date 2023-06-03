@@ -31,6 +31,8 @@ final class User: Object, ObjectKeyIdentifiable {
     // List of Game Ids
     @Persisted var wishlist: List<ObjectId>
     
+    @Persisted var ratings: List<Rating>
+    
 //    // TODO: List of Payments
 //    @Persisted var payment: List<Object>
     

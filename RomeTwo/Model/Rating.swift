@@ -16,5 +16,7 @@ final class Rating: Object, ObjectKeyIdentifiable {
     
     @Persisted var recommend: Bool
     
+    @Persisted(originProperty: "ratings") var author: LinkingObjects<User>
+    
     @Persisted(originProperty: "ratings") var game: LinkingObjects<Game>
 }
