@@ -36,16 +36,14 @@ final class Game: Object, ObjectKeyIdentifiable {
     
     @Persisted var releaseDate: Date
     
+    @Persisted var developerId: ObjectId
+    
+    @Persisted var publisherId: ObjectId
+    
     // List of label ids
     @Persisted var labels: List<ObjectId>
     
     // List of media ids
     @Persisted var media: List<Media>
-
-    // Game belongs to a developer
-    @Persisted var developerId: ObjectId
-    
-    // Game belongs to a publisher
-    @Persisted var publisherId: ObjectId
     
 }
