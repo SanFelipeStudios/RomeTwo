@@ -20,6 +20,8 @@ final class User: Object, ObjectKeyIdentifiable {
     
     @Persisted var phone: String
     
+    @Persisted var addresses: List<Address>
+    
     // List of Game Ids
     @Persisted var library: List<ObjectId>
     
