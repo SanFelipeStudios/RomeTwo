@@ -7,16 +7,16 @@
 
 import RealmSwift
 
-final class Rating: Object, ObjectKeyIdentifiable {
+final class Review: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     
     @Persisted var title: String
     
-    @Persisted var details: String
+    @Persisted var summary: String
     
     @Persisted var recommend: Bool
     
-    @Persisted(originProperty: "ratings") var author: LinkingObjects<User>
+    @Persisted var userId: ObjectId
     
-    @Persisted(originProperty: "ratings") var game: LinkingObjects<Game>
+    @Persisted var game: ObjectId
 }

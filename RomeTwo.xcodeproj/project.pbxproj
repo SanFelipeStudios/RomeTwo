@@ -21,7 +21,9 @@
 		3A5128A42A2AB21A004AE117 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128A32A2AB21A004AE117 /* Publisher.swift */; };
 		3A5128A62A2AB308004AE117 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128A52A2AB308004AE117 /* Media.swift */; };
 		3A5128A82A2AB388004AE117 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128A72A2AB388004AE117 /* Label.swift */; };
-		3A5128AA2A2AB411004AE117 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128A92A2AB411004AE117 /* Rating.swift */; };
+		3A5128AA2A2AB411004AE117 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128A92A2AB411004AE117 /* Review.swift */; };
+		3A5128AC2A300C07004AE117 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128AB2A300C07004AE117 /* Country.swift */; };
+		3A5128AE2A300C48004AE117 /* Territory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128AD2A300C48004AE117 /* Territory.swift */; };
 		3A797DEA2A1EAB08004432D6 /* NotoSansTamil-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */; };
 		3AB2B6EC2A0857FA00EEF750 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6EB2A0857FA00EEF750 /* Realm */; };
 		3AB2B6EE2A0857FA00EEF750 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6ED2A0857FA00EEF750 /* RealmSwift */; };
@@ -70,7 +72,9 @@
 		3A5128A32A2AB21A004AE117 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 		3A5128A52A2AB308004AE117 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		3A5128A72A2AB388004AE117 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		3A5128A92A2AB411004AE117 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		3A5128A92A2AB411004AE117 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		3A5128AB2A300C07004AE117 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		3A5128AD2A300C48004AE117 /* Territory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Territory.swift; sourceTree = "<group>"; };
 		3A6C58292A10210B00DFBCCF /* RomeTwo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RomeTwo.entitlements; sourceTree = "<group>"; };
 		3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Light.ttf"; sourceTree = "<group>"; };
 		3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Regular.ttf"; sourceTree = "<group>"; };
@@ -160,12 +164,14 @@
 			children = (
 				3A4517AA2A296A7F006C0156 /* Curation.swift */,
 				3A51289D2A2974C2004AE117 /* User.swift */,
+				3A5128AB2A300C07004AE117 /* Country.swift */,
+				3A5128AD2A300C48004AE117 /* Territory.swift */,
 				3A51289F2A2AAEDC004AE117 /* Game.swift */,
 				3A5128A12A2AB177004AE117 /* Developer.swift */,
 				3A5128A32A2AB21A004AE117 /* Publisher.swift */,
 				3A5128A52A2AB308004AE117 /* Media.swift */,
 				3A5128A72A2AB388004AE117 /* Label.swift */,
-				3A5128A92A2AB411004AE117 /* Rating.swift */,
+				3A5128A92A2AB411004AE117 /* Review.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,7 +389,7 @@
 			files = (
 				3A4517AB2A296A7F006C0156 /* Curation.swift in Sources */,
 				3AE858652A191A34008444B3 /* ProductView.swift in Sources */,
-				3A5128AA2A2AB411004AE117 /* Rating.swift in Sources */,
+				3A5128AA2A2AB411004AE117 /* Review.swift in Sources */,
 				3A0C8D222A24015100ED9C9C /* CurationDescription.swift in Sources */,
 				3A4517A82A250088006C0156 /* PurchaseButton.swift in Sources */,
 				3A0C8D202A24004A00ED9C9C /* CurationBanner.swift in Sources */,
@@ -391,6 +397,8 @@
 				3A5128A82A2AB388004AE117 /* Label.swift in Sources */,
 				3A5128A42A2AB21A004AE117 /* Publisher.swift in Sources */,
 				8FE4950129F8C34C00F8CE2E /* ContentView.swift in Sources */,
+				3A5128AE2A300C48004AE117 /* Territory.swift in Sources */,
+				3A5128AC2A300C07004AE117 /* Country.swift in Sources */,
 				3A0C8D272A240AB400ED9C9C /* DeviceName.swift in Sources */,
 				3A5128A02A2AAEDC004AE117 /* Game.swift in Sources */,
 				8FE494FF29F8C34C00F8CE2E /* RomeTwoApp.swift in Sources */,

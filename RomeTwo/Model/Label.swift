@@ -12,6 +12,8 @@ final class Label: Object, ObjectKeyIdentifiable {
     
     @Persisted var name: String
     
-    @Persisted var details: String
+    @Persisted var summary: String
+    
+    @Persisted var games: List<ObjectId>
     
 }

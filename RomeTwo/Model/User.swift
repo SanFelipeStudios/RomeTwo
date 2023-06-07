@@ -20,23 +20,34 @@ final class User: Object, ObjectKeyIdentifiable {
     
     @Persisted var phone: String
     
-    // TODO: Implement Objects
-//    @Persisted var cart: Object
-//
-//    @Persisted var address: Object
-    
     // List of Game Ids
     @Persisted var library: List<ObjectId>
     
     // List of Game Ids
+    @Persisted var cart: List<ObjectId>
+    
+    // List of Game Ids
     @Persisted var wishlist: List<ObjectId>
     
-    @Persisted var ratings: List<Rating>
-    
-//    // TODO: List of Payments
+//     TODO: Implement Objects
 //    @Persisted var payment: List<Object>
-    
-    
     
 }
 
+final class Address: EmbeddedObject {
+    @Persisted var isMailingAddress: Bool
+    
+    @Persisted var isBillingAddress: Bool
+    
+    @Persisted var addressLineOne: String
+    
+    @Persisted var addressLineTwo: String
+    
+    @Persisted var zipcode: Int
+    
+    @Persisted var city: String
+    
+    @Persisted var territory: Territory
+    
+    @Persisted var country: Country
+}

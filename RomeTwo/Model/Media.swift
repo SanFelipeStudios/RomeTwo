@@ -14,7 +14,4 @@ final class Media: Object, ObjectKeyIdentifiable {
     @Persisted var type: String
     
     @Persisted var url: String
-    
-    // Media belongs to a game
-    @Persisted(originProperty: "media") var game: LinkingObjects<Game>
 }

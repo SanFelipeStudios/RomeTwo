@@ -28,7 +28,7 @@ final class Game: Object, ObjectKeyIdentifiable {
     
     @Persisted var title: String
     
-    @Persisted var details: String
+    @Persisted var summary: String
     
     @Persisted var price: Double
     
@@ -39,16 +39,13 @@ final class Game: Object, ObjectKeyIdentifiable {
     // List of label ids
     @Persisted var labels: List<ObjectId>
     
-    // List of rating ids
-    @Persisted var ratings: List<Rating>
-    
     // List of media ids
     @Persisted var media: List<Media>
 
     // Game belongs to a developer
-    @Persisted(originProperty: "games") var developerId: LinkingObjects<Developer>
+    @Persisted var developerId: ObjectId
     
     // Game belongs to a publisher
-    @Persisted(originProperty: "games") var publisherId: LinkingObjects<Publisher>
+    @Persisted var publisherId: ObjectId
     
 }

@@ -14,6 +14,6 @@ final class Publisher: Object, ObjectKeyIdentifiable {
     
     @Persisted var details: String
     
-    @Persisted var games: List<Game>
+    @Persisted var games: List<ObjectId>
     
 }
