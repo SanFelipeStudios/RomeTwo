@@ -24,12 +24,20 @@ actor DatabaseActor {
     // - .error: throw an exception if a key with the same
     //   primary key already exists.
     func insertManyMayExist<T: RealmSwiftObject>(objects: [T]) async throws {
+        // TOOD: Consider moving the try await ABOVE the FOR loop
         for object in objects {
             try await realm.asyncWrite {
                 realm.create(type(of: object), value: object, update: .modified)
             }
         }
     }
+    
+    func insertMayExist<T: RealmSwiftObject>(object: T) async throws {
+            try await realm.asyncWrite {
+                realm.create(type(of: object), value: object, update: .modified)
+            }
+    }
+    
     
     func insertManyUnique<T: RealmSwift.Object>(objects: [T]) async throws {
         for object in objects {

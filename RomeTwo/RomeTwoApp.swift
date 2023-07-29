@@ -19,6 +19,7 @@ struct RomeTwoApp: SwiftUI.App {
             } else {
                 LocalOnlyContentView()
             }
+//            CurationView()
         }
     }
 }

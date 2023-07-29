@@ -12,11 +12,11 @@ final class Curation: Object, ObjectKeyIdentifiable {
     
     @Persisted var gameId: ObjectId
     
-    @Persisted var heading: String
+    @Persisted var heading: String?
     
     @Persisted var title: String
     
-    @Persisted var subheading: String
+    @Persisted var subheading: String?
     
     @Persisted var summary: String
 }

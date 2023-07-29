@@ -49,7 +49,7 @@ final class Address: EmbeddedObject {
     
     @Persisted var city: String
     
-    @Persisted var territory: Territory
+    @Persisted var territory: Territory?
     
-    @Persisted var country: Country
+    @Persisted var country: Country?
 }

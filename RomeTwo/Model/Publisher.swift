@@ -12,7 +12,7 @@ final class Publisher: Object, ObjectKeyIdentifiable {
     
     @Persisted var name: String
     
-    @Persisted var summary: String
+    @Persisted var summary: String?
     
     @Persisted var games: List<ObjectId>
     

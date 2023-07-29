@@ -11,6 +11,12 @@
 		3A0C8D222A24015100ED9C9C /* CurationDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D212A24015100ED9C9C /* CurationDescription.swift */; };
 		3A0C8D242A24059F00ED9C9C /* CurationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D232A24059F00ED9C9C /* CurationHeader.swift */; };
 		3A0C8D272A240AB400ED9C9C /* DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D262A240AB400ED9C9C /* DeviceName.swift */; };
+		3A2D890E2A60BC6A0068523A /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D890D2A60BC6A0068523A /* DatabaseTests.swift */; };
+		3A2D89172A60C1820068523A /* CountryProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D89162A60C1820068523A /* CountryProjection.swift */; };
+		3A2D89192A60C1F00068523A /* UserProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D89182A60C1F00068523A /* UserProjection.swift */; };
+		3A2D89222A60CD7B0068523A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A2D89212A60CD7B0068523A /* RealmSwift */; };
+		3A2D89242A60CD800068523A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A2D89232A60CD800068523A /* RealmSwift */; };
+		3A2D89262A60CD850068523A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A2D89252A60CD850068523A /* RealmSwift */; };
 		3A41A61C2A1588C600D65755 /* CurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A41A61B2A1588C600D65755 /* CurationView.swift */; };
 		3A41A6242A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A41A6232A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf */; };
 		3A4517A82A250088006C0156 /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4517A72A250088006C0156 /* PurchaseButton.swift */; };
@@ -26,7 +32,7 @@
 		3A5128AE2A300C48004AE117 /* Territory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128AD2A300C48004AE117 /* Territory.swift */; };
 		3A797DEA2A1EAB08004432D6 /* NotoSansTamil-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */; };
 		3A89FA002A350D9B0062732F /* DatabaseActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A89F9FF2A350D9B0062732F /* DatabaseActor.swift */; };
-		3AB2B6EC2A0857FA00EEF750 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6EB2A0857FA00EEF750 /* Realm */; };
+		3AB2B6EC2A0857FA00EEF750 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6EB2A0857FA00EEF750 /* Realm */; settings = {ATTRIBUTES = (Required, ); }; };
 		3AB2B6EE2A0857FA00EEF750 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6ED2A0857FA00EEF750 /* RealmSwift */; };
 		3AB5547F2A53515E00B233D1 /* DatabaseReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5547E2A53515E00B233D1 /* DatabaseReader.swift */; };
 		3AE858602A15A0B3008444B3 /* NotoSansTamil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */; };
@@ -42,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A2D89082A60BBF50068523A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE494F329F8C34C00F8CE2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE494FA29F8C34C00F8CE2E;
+			remoteInfo = RomeTwo;
+		};
 		8FE4950C29F8C34E00F8CE2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8FE494F329F8C34C00F8CE2E /* Project object */;
@@ -63,6 +76,10 @@
 		3A0C8D212A24015100ED9C9C /* CurationDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationDescription.swift; sourceTree = "<group>"; };
 		3A0C8D232A24059F00ED9C9C /* CurationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationHeader.swift; sourceTree = "<group>"; };
 		3A0C8D262A240AB400ED9C9C /* DeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceName.swift; sourceTree = "<group>"; };
+		3A2D89042A60BBF50068523A /* RomeTwoAsyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomeTwoAsyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2D890D2A60BC6A0068523A /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
+		3A2D89162A60C1820068523A /* CountryProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryProjection.swift; sourceTree = "<group>"; };
+		3A2D89182A60C1F00068523A /* UserProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProjection.swift; sourceTree = "<group>"; };
 		3A41A61B2A1588C600D65755 /* CurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationView.swift; sourceTree = "<group>"; };
 		3A41A6222A1597EE00D65755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3A41A6232A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -97,6 +114,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A2D89012A60BBF50068523A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2D89222A60CD7B0068523A /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FE494F829F8C34C00F8CE2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2D89262A60CD850068523A /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2D89242A60CD800068523A /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +166,38 @@
 				3A4517A72A250088006C0156 /* PurchaseButton.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		3A2D89052A60BBF50068523A /* RomeTwoAsyncTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A2D890F2A60BDEB0068523A /* DatabaseTests */,
+			);
+			path = RomeTwoAsyncTests;
+			sourceTree = "<group>";
+		};
+		3A2D890F2A60BDEB0068523A /* DatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A2D890D2A60BC6A0068523A /* DatabaseTests.swift */,
+			);
+			path = DatabaseTests;
+			sourceTree = "<group>";
+		};
+		3A2D89152A60C15B0068523A /* Projections */ = {
+			isa = PBXGroup;
+			children = (
+				3A2D89162A60C1820068523A /* CountryProjection.swift */,
+				3A2D89182A60C1F00068523A /* UserProjection.swift */,
+			);
+			path = Projections;
+			sourceTree = "<group>";
+		};
+		3A2D891A2A60CB940068523A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3A41A61A2A1588AD00D65755 /* Curation */ = {
@@ -201,9 +260,11 @@
 			isa = PBXGroup;
 			children = (
 				8FE494FD29F8C34C00F8CE2E /* RomeTwo */,
+				3A2D89052A60BBF50068523A /* RomeTwoAsyncTests */,
 				8FE4950E29F8C34E00F8CE2E /* RomeTwoTests */,
 				8FE4951829F8C34E00F8CE2E /* RomeTwoUITests */,
 				8FE494FC29F8C34C00F8CE2E /* Products */,
+				3A2D891A2A60CB940068523A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +274,7 @@
 				8FE494FB29F8C34C00F8CE2E /* RomeTwo.app */,
 				8FE4950B29F8C34E00F8CE2E /* RomeTwoTests.xctest */,
 				8FE4951529F8C34E00F8CE2E /* RomeTwoUITests.xctest */,
+				3A2D89042A60BBF50068523A /* RomeTwoAsyncTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +282,7 @@
 		8FE494FD29F8C34C00F8CE2E /* RomeTwo */ = {
 			isa = PBXGroup;
 			children = (
+				3A2D89152A60C15B0068523A /* Projections */,
 				3A89F9FE2A350D8D0062732F /* Database */,
 				3A4517A92A296A44006C0156 /* Model */,
 				3A0C8D252A240AA200ED9C9C /* Helper */,
@@ -263,6 +326,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3A2D89032A60BBF50068523A /* RomeTwoAsyncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A2D890A2A60BBF50068523A /* Build configuration list for PBXNativeTarget "RomeTwoAsyncTests" */;
+			buildPhases = (
+				3A2D89002A60BBF50068523A /* Sources */,
+				3A2D89012A60BBF50068523A /* Frameworks */,
+				3A2D89022A60BBF50068523A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A2D89092A60BBF50068523A /* PBXTargetDependency */,
+			);
+			name = RomeTwoAsyncTests;
+			packageProductDependencies = (
+				3A2D89212A60CD7B0068523A /* RealmSwift */,
+			);
+			productName = RomeTwoAsyncTests;
+			productReference = 3A2D89042A60BBF50068523A /* RomeTwoAsyncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8FE494FA29F8C34C00F8CE2E /* RomeTwo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FE4951F29F8C34E00F8CE2E /* Build configuration list for PBXNativeTarget "RomeTwo" */;
@@ -298,6 +382,9 @@
 				8FE4950D29F8C34E00F8CE2E /* PBXTargetDependency */,
 			);
 			name = RomeTwoTests;
+			packageProductDependencies = (
+				3A2D89252A60CD850068523A /* RealmSwift */,
+			);
 			productName = RomeTwoTests;
 			productReference = 8FE4950B29F8C34E00F8CE2E /* RomeTwoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -316,6 +403,9 @@
 				8FE4951729F8C34E00F8CE2E /* PBXTargetDependency */,
 			);
 			name = RomeTwoUITests;
+			packageProductDependencies = (
+				3A2D89232A60CD800068523A /* RealmSwift */,
+			);
 			productName = RomeTwoUITests;
 			productReference = 8FE4951529F8C34E00F8CE2E /* RomeTwoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -327,9 +417,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					3A2D89032A60BBF50068523A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8FE494FA29F8C34C00F8CE2E;
+					};
 					8FE494FA29F8C34C00F8CE2E = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -362,11 +456,19 @@
 				8FE494FA29F8C34C00F8CE2E /* RomeTwo */,
 				8FE4950A29F8C34E00F8CE2E /* RomeTwoTests */,
 				8FE4951429F8C34E00F8CE2E /* RomeTwoUITests */,
+				3A2D89032A60BBF50068523A /* RomeTwoAsyncTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A2D89022A60BBF50068523A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FE494F929F8C34C00F8CE2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,14 +499,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A2D89002A60BBF50068523A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2D890E2A60BC6A0068523A /* DatabaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FE494F729F8C34C00F8CE2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3A4517AB2A296A7F006C0156 /* Curation.swift in Sources */,
+				3A2D89172A60C1820068523A /* CountryProjection.swift in Sources */,
 				3AE858652A191A34008444B3 /* ProductView.swift in Sources */,
 				3A5128AA2A2AB411004AE117 /* Review.swift in Sources */,
 				3A0C8D222A24015100ED9C9C /* CurationDescription.swift in Sources */,
+				3A2D89192A60C1F00068523A /* UserProjection.swift in Sources */,
 				3A4517A82A250088006C0156 /* PurchaseButton.swift in Sources */,
 				3A0C8D202A24004A00ED9C9C /* CurationBanner.swift in Sources */,
 				3A5128A22A2AB177004AE117 /* Developer.swift in Sources */,
@@ -445,6 +557,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3A2D89092A60BBF50068523A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE494FA29F8C34C00F8CE2E /* RomeTwo */;
+			targetProxy = 3A2D89082A60BBF50068523A /* PBXContainerItemProxy */;
+		};
 		8FE4950D29F8C34E00F8CE2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8FE494FA29F8C34C00F8CE2E /* RomeTwo */;
@@ -458,6 +575,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3A2D890B2A60BBF50068523A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6525SMR8C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learn.RomeTwoAsyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RomeTwo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RomeTwo";
+			};
+			name = Debug;
+		};
+		3A2D890C2A60BBF50068523A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6525SMR8C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learn.RomeTwoAsyncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RomeTwo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RomeTwo";
+			};
+			name = Release;
+		};
 		8FE4951D29F8C34E00F8CE2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -724,6 +879,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3A2D890A2A60BBF50068523A /* Build configuration list for PBXNativeTarget "RomeTwoAsyncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A2D890B2A60BBF50068523A /* Debug */,
+				3A2D890C2A60BBF50068523A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8FE494F629F8C34C00F8CE2E /* Build configuration list for PBXProject "RomeTwo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -774,6 +938,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A2D89212A60CD7B0068523A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AB2B6EA2A0857FA00EEF750 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		3A2D89232A60CD800068523A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AB2B6EA2A0857FA00EEF750 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		3A2D89252A60CD850068523A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AB2B6EA2A0857FA00EEF750 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		3AB2B6EB2A0857FA00EEF750 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3AB2B6EA2A0857FA00EEF750 /* XCRemoteSwiftPackageReference "realm-swift" */;

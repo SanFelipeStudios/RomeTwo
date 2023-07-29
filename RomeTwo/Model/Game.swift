@@ -34,7 +34,7 @@ final class Game: Object, ObjectKeyIdentifiable {
     
     @Persisted var hasInAppPurchases: Bool
     
-    @Persisted var releaseDate: Date
+    @Persisted var releaseDate: Date?
     
     @Persisted var developerId: ObjectId
     
