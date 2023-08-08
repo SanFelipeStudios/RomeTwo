@@ -32,6 +32,7 @@
 		3A5128AE2A300C48004AE117 /* Territory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5128AD2A300C48004AE117 /* Territory.swift */; };
 		3A797DEA2A1EAB08004432D6 /* NotoSansTamil-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */; };
 		3A89FA002A350D9B0062732F /* DatabaseActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A89F9FF2A350D9B0062732F /* DatabaseActor.swift */; };
+		3A9B24082A756CDC00457BFC /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9B24072A756CDC00457BFC /* DatabaseTests.swift */; };
 		3AB2B6EC2A0857FA00EEF750 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6EB2A0857FA00EEF750 /* Realm */; settings = {ATTRIBUTES = (Required, ); }; };
 		3AB2B6EE2A0857FA00EEF750 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB2B6ED2A0857FA00EEF750 /* RealmSwift */; };
 		3AB5547F2A53515E00B233D1 /* DatabaseReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5547E2A53515E00B233D1 /* DatabaseReader.swift */; };
@@ -97,6 +98,7 @@
 		3A6C58292A10210B00DFBCCF /* RomeTwo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RomeTwo.entitlements; sourceTree = "<group>"; };
 		3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Light.ttf"; sourceTree = "<group>"; };
 		3A89F9FF2A350D9B0062732F /* DatabaseActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseActor.swift; sourceTree = "<group>"; };
+		3A9B24072A756CDC00457BFC /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
 		3AB5547E2A53515E00B233D1 /* DatabaseReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseReader.swift; sourceTree = "<group>"; };
 		3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Regular.ttf"; sourceTree = "<group>"; };
 		3AE8585F2A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				8FE4950F29F8C34E00F8CE2E /* RomeTwoTests.swift */,
+				3A9B24072A756CDC00457BFC /* DatabaseTests.swift */,
 			);
 			path = RomeTwoTests;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9B24082A756CDC00457BFC /* DatabaseTests.swift in Sources */,
 				8FE4951029F8C34E00F8CE2E /* RomeTwoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

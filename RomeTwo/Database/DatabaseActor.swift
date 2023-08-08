@@ -16,6 +16,17 @@ actor DatabaseActor {
     init() async throws {
         realm = try await Realm(actor: self)
     }
+    
+    // --- Ability to r/w for a specific class ---
+    func insertCountry(country: Country) {
+        try! realm.write {
+            // Add the instance to the realm.
+            realm.add(country)
+        }
+    }
+    
+    
+    // --------------------------------------------
 
     // When `update` is:
     // - .modified: update the fields that have changed.

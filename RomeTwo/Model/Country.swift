@@ -6,10 +6,10 @@
 //
 
 import RealmSwift
+import Foundation
 
 final class Country: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+    @Persisted(primaryKey: true) var _id: Int
     
     @Persisted var name: String
-    
 }
