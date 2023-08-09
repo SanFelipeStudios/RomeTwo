@@ -5,45 +5,35 @@
 //  Created by Nicholas Rillera on 6/2/23.
 //
 
-
-
-//Game
-//
-//    id: UUID
-//    Title: String
-//    Description: [String]
-//    DeveloperId: UUID (inverse)
-//    PublisherId: UUID (inverse)
-//    Price: Double
-//    hasInAppPurchases: Boolean
-//    Release Date: String
-//    Labels: [UUID]
-//    Ratings: [UUID] (linking)
-//    Media: [Integer: UUID] (linking)
 import Foundation
-import RealmSwift
 
-final class Game: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+struct Game {
+    var id = UUID()
     
-    @Persisted var title: String
+    var title: String
     
-    @Persisted var summary: String
+    var summary: String
     
-    @Persisted var price: Double
+    var price: Double
     
-    @Persisted var hasInAppPurchases: Bool
+    var hasInAppPurchases: Bool
     
-    @Persisted var releaseDate: Date
+    var releaseDate: Date
     
-    @Persisted var developerId: ObjectId
+    var developerId: UUID
     
-    @Persisted var publisherId: ObjectId
+    var publisherId: UUID
     
     // List of label ids
-    @Persisted var labels: List<ObjectId>
+    var labels: Array<UUID>
     
     // List of media ids
-    @Persisted var media: List<Media>
+    var media: Array<Media>
     
+}
+
+extension Game {
+    static let gameOne = Game(title: "gameOne", summary: "summary", price: 3.99, hasInAppPurchases: false, releaseDate: Date.now, developerId: UUID(), publisherId: UUID(), labels: Array(), media: Array())
+    static let gameTwo = Game(title: "gameTwo", summary: "summary", price: 4.99, hasInAppPurchases: true, releaseDate: Date.now, developerId: UUID(), publisherId: UUID(), labels: Array(), media: Array())
+    static let gameThree = Game(title: "gameThree", summary: "summary", price: 5.99, hasInAppPurchases: false, releaseDate: Date.now, developerId: UUID(), publisherId: UUID(), labels: Array(), media: Array())
 }

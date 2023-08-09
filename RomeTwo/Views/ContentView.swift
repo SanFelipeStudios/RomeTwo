@@ -1,5 +1,4 @@
 import AuthenticationServices
-import RealmSwift
 import SwiftUI
 import os
 
@@ -22,13 +21,13 @@ import os
 //
 //    // Hold an error if one occurs so we can display it.
 //    @State var error: Error?
-//    
+//
 //    // Keep track of whether login is in progress.
 //    @State var isLoggingIn = false
 //
 //    var body: some View {
-//        
-//        
+//
+//
 //        VStack {
 //            if isLoggingIn {
 //                let _ = Print(String(describing: LoginView.self),
@@ -38,7 +37,7 @@ import os
 //                let _ = Print(String(describing: LoginView.self),
 //                      "User is NOT logging in...", "isSignedIn: \(isSignedIn)")
 //            }
-//            
+//
 //            if let error = error {
 //                let _ = Print(String(describing: LoginView.self),
 //                      "Error in Login View: \(error.localizedDescription)")

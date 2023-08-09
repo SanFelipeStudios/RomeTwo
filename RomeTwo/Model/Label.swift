@@ -5,15 +5,15 @@
 //  Created by Nicholas Rillera on 6/2/23.
 //
 
-import RealmSwift
+import Foundation
 
-final class Label: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+struct Label {
+    var id = UUID()
     
-    @Persisted var name: String
+    var name: String
     
-    @Persisted var summary: String
+    var summary: String
     
-    @Persisted var games: List<ObjectId>
+    var games: Array<UUID>
     
 }

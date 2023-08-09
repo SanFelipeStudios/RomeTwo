@@ -5,11 +5,11 @@
 //  Created by Nicholas Rillera on 6/6/23.
 //
 
-import RealmSwift
+import Foundation
 
-final class Territory: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+struct Territory {
+    var id = UUID()
     
-    @Persisted var name: String
+    var name: String
     
 }

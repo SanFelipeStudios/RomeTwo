@@ -4,14 +4,15 @@
 //
 //  Created by Nicholas Rillera on 6/2/23.
 //
-import RealmSwift
 
-final class Media: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+import Foundation
+
+struct Media {
+    var id = UUID()
     
-    @Persisted var name: String
+    var name: String
     
-    @Persisted var type: String
+    var type: String
     
-    @Persisted var url: String
+    var url: String
 }

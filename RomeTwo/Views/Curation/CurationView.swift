@@ -11,6 +11,7 @@ extension View {
     func curationModifier() -> some View {
         self
             .background(Color("Curation Background")).edgesIgnoringSafeArea([.all])
+//            .navigationBarBackButtonHidden()
     }
 }
 
@@ -20,7 +21,7 @@ struct CurationView: View {
             ScrollView {
                 VStack (spacing: 0) {
                     CurationHeader(geometry: geometry)
-                    CurationBanner()
+                    CommonBanner(color: "Curation Average", game: Game.gameOne)
                     CurationDescription()
                 }
             }

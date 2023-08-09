@@ -5,19 +5,19 @@
 //  Created by Nicholas Rillera on 6/2/23.
 //
 
-import RealmSwift
+import Foundation
 
-final class Review: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+struct Review {
+    var id = UUID()
     
-    @Persisted var userId: ObjectId
+    var userId: UUID
     
-    @Persisted var gameId: ObjectId
+    var gameId: UUID
     
-    @Persisted var title: String
+    var title: String
     
-    @Persisted var summary: String
+    var summary: String
     
-    @Persisted var recommend: Bool
+    var recommend: Bool
     
 }

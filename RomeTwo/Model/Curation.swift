@@ -5,20 +5,20 @@
 //  Created by Nicholas Rillera on 6/1/23.
 //
 
-import RealmSwift
+import Foundation
 
-final class Curation: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+struct Curation {
+    var id = UUID()
     
-    @Persisted var gameId: ObjectId
+    var gameId: UUID
     
-    @Persisted var heading: String
+    var heading: String
     
-    @Persisted var title: String
+    var title: String
     
-    @Persisted var subheading: String
+    var subheading: String
     
-    @Persisted var summary: String
+    var summary: String
 }
 
 

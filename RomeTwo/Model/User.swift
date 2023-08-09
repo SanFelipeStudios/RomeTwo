@@ -5,51 +5,51 @@
 //  Created by Nicholas Rillera on 6/1/23.
 //
 
-import RealmSwift
+import Foundation
 
-final class User: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
+struct User {
+    var id = UUID()
     
-    @Persisted var username: String
+    var username: String
     
-    @Persisted var firstName: String
+    var firstName: String
     
-    @Persisted var lastName: String
+    var lastName: String
     
-    @Persisted var email: String
+    var email: String
     
-    @Persisted var phone: String
+    var phone: String
     
-    @Persisted var addresses: List<Address>
-    
-    // List of Game Ids
-    @Persisted var library: List<ObjectId>
+    var addresses: Array<Address>
     
     // List of Game Ids
-    @Persisted var cart: List<ObjectId>
+    var library: Array<UUID>
     
     // List of Game Ids
-    @Persisted var wishlist: List<ObjectId>
+    var cart: Array<UUID>
+    
+    // List of Game Ids
+    var wishlist: Array<UUID>
     
 //     TODO: Implement Objects
 //    @Persisted var payment: List<Object>
     
 }
 
-final class Address: EmbeddedObject {
-    @Persisted var isMailingAddress: Bool
+struct Address {
+    var isMailingAddress: Bool
     
-    @Persisted var isBillingAddress: Bool
+    var isBillingAddress: Bool
     
-    @Persisted var addressLineOne: String
+    var addressLineOne: String
     
-    @Persisted var addressLineTwo: String
+    var addressLineTwo: String
     
-    @Persisted var zipcode: Int
+    var zipcode: Int
     
-    @Persisted var city: String
+    var city: String
     
-    @Persisted var territory: Territory
+    var territory: Territory
     
-    @Persisted var country: Country
+    var country: Country
 }

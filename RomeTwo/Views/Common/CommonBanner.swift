@@ -21,23 +21,27 @@ extension View {
             .foregroundColor(.white)
     }
     
-    func bannerModifier() -> some View {
+    func bannerModifier(color: String) -> some View {
         self
             .frame(maxWidth: .infinity, minHeight: 80)
-            .background(Color(("Curation Average")))
+            .background(Color(color))
     }
 }
 
-struct CurationBanner: View {
+struct CommonBanner: View {
+
+    var color: String
+    var game: Game
+    
     var body: some View {
         HStack() {
-            NavigationLink(destination: ProductView()) {
+            NavigationLink(destination: CurationView()) {
                 HStack {
                     Image("HadesIcon")
                         .appIconModifier()
                     
                     VStack(alignment: .leading) {
-                        Text("Hades")
+                        Text(game.title)
                             .appTitleStyle()
                         Text("Roguelike")
                             .appGenreStyle()
@@ -51,14 +55,14 @@ struct CurationBanner: View {
             
         }
         .padding()
-        .bannerModifier()
+        .bannerModifier(color: color)
     }
 }
 
-struct CurationBanner_Previews: PreviewProvider {
+struct CommonBanner_Previews: PreviewProvider {
     static var previews: some View {
         ForEach([DeviceName.iPhone_8.rawValue, DeviceName.iPhone_12_mini.rawValue, DeviceName.iPhone_14_Pro_Max.rawValue], id: \.self) { device in
-            CurationBanner()
+            CommonBanner(color: "Curation Background", game: Game.gameOne)
                 .previewDevice(PreviewDevice(rawValue: device))
                 .previewDisplayName(device)
         }
