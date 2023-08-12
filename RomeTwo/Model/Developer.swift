@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Developer {
+struct Developer: Hashable, Codable, Identifiable {
     var id = UUID()
     
     var name: String

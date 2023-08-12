@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Publisher {
+struct Publisher: Hashable, Codable, Identifiable {
     var id = UUID()
     
     var name: String

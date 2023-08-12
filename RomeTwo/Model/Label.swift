@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Label {
+struct Label: Hashable, Codable, Identifiable {
     var id = UUID()
     
     var name: String

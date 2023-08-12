@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A0C8D202A24004A00ED9C9C /* CommonBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D1F2A24004A00ED9C9C /* CommonBanner.swift */; };
+		3A0C8D202A24004A00ED9C9C /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D1F2A24004A00ED9C9C /* Banner.swift */; };
 		3A0C8D222A24015100ED9C9C /* CurationDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D212A24015100ED9C9C /* CurationDescription.swift */; };
 		3A0C8D242A24059F00ED9C9C /* CurationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D232A24059F00ED9C9C /* CurationHeader.swift */; };
 		3A0C8D272A240AB400ED9C9C /* DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0C8D262A240AB400ED9C9C /* DeviceName.swift */; };
@@ -27,6 +27,12 @@
 		3A797DEA2A1EAB08004432D6 /* NotoSansTamil-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */; };
 		3AE0A45E2A83125400DF8469 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0A45D2A83125400DF8469 /* ShopView.swift */; };
 		3AE0A4622A831EFE00DF8469 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0A4612A831EFE00DF8469 /* ProductView.swift */; };
+		3AE0A4642A88013500DF8469 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE0A4632A88013500DF8469 /* ModelData.swift */; };
+		3AE0A4672A88024100DF8469 /* gameData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A4662A88024100DF8469 /* gameData.json */; };
+		3AE0A4692A880AA800DF8469 /* developerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A4682A880AA800DF8469 /* developerData.json */; };
+		3AE0A46B2A880C0100DF8469 /* publisherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A46A2A880C0100DF8469 /* publisherData.json */; };
+		3AE0A46D2A880D9200DF8469 /* labelData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A46C2A880D9200DF8469 /* labelData.json */; };
+		3AE0A46F2A880EE800DF8469 /* reviewData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0A46E2A880EE800DF8469 /* reviewData.json */; };
 		3AE858602A15A0B3008444B3 /* NotoSansTamil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */; };
 		3AE858612A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8585F2A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf */; };
 		8FE494FF29F8C34C00F8CE2E /* RomeTwoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE494FE29F8C34C00F8CE2E /* RomeTwoApp.swift */; };
@@ -56,7 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A0C8D1F2A24004A00ED9C9C /* CommonBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonBanner.swift; sourceTree = "<group>"; };
+		3A0C8D1F2A24004A00ED9C9C /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		3A0C8D212A24015100ED9C9C /* CurationDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationDescription.swift; sourceTree = "<group>"; };
 		3A0C8D232A24059F00ED9C9C /* CurationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationHeader.swift; sourceTree = "<group>"; };
 		3A0C8D262A240AB400ED9C9C /* DeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceName.swift; sourceTree = "<group>"; };
@@ -78,6 +84,12 @@
 		3A797DE92A1EAB08004432D6 /* NotoSansTamil-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Light.ttf"; sourceTree = "<group>"; };
 		3AE0A45D2A83125400DF8469 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		3AE0A4612A831EFE00DF8469 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		3AE0A4632A88013500DF8469 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3AE0A4662A88024100DF8469 /* gameData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gameData.json; sourceTree = "<group>"; };
+		3AE0A4682A880AA800DF8469 /* developerData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = developerData.json; sourceTree = "<group>"; };
+		3AE0A46A2A880C0100DF8469 /* publisherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = publisherData.json; sourceTree = "<group>"; };
+		3AE0A46C2A880D9200DF8469 /* labelData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = labelData.json; sourceTree = "<group>"; };
+		3AE0A46E2A880EE800DF8469 /* reviewData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reviewData.json; sourceTree = "<group>"; };
 		3AE8585E2A15A0B3008444B3 /* NotoSansTamil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-Regular.ttf"; sourceTree = "<group>"; };
 		3AE8585F2A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTamil-SemiBold.ttf"; sourceTree = "<group>"; };
 		8FE494FB29F8C34C00F8CE2E /* RomeTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomeTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				3A0C8D262A240AB400ED9C9C /* DeviceName.swift */,
-				3A4517A72A250088006C0156 /* PurchaseButton.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 				3A5128A52A2AB308004AE117 /* Media.swift */,
 				3A5128A72A2AB388004AE117 /* Label.swift */,
 				3A5128A92A2AB411004AE117 /* Review.swift */,
+				3AE0A4632A88013500DF8469 /* ModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,7 +199,8 @@
 		3AE0A45F2A83151200DF8469 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3A0C8D1F2A24004A00ED9C9C /* CommonBanner.swift */,
+				3A4517A72A250088006C0156 /* PurchaseButton.swift */,
+				3A0C8D1F2A24004A00ED9C9C /* Banner.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -198,6 +211,18 @@
 				3AE0A4612A831EFE00DF8469 /* ProductView.swift */,
 			);
 			path = Product;
+			sourceTree = "<group>";
+		};
+		3AE0A4652A8801FD00DF8469 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AE0A4662A88024100DF8469 /* gameData.json */,
+				3AE0A4682A880AA800DF8469 /* developerData.json */,
+				3AE0A46A2A880C0100DF8469 /* publisherData.json */,
+				3AE0A46C2A880D9200DF8469 /* labelData.json */,
+				3AE0A46E2A880EE800DF8469 /* reviewData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8FE494F229F8C34C00F8CE2E = {
@@ -223,6 +248,7 @@
 		8FE494FD29F8C34C00F8CE2E /* RomeTwo */ = {
 			isa = PBXGroup;
 			children = (
+				3AE0A4652A8801FD00DF8469 /* Resources */,
 				3A4517A92A296A44006C0156 /* Model */,
 				3A0C8D252A240AA200ED9C9C /* Helper */,
 				3A6C58292A10210B00DFBCCF /* RomeTwo.entitlements */,
@@ -370,11 +396,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A797DEA2A1EAB08004432D6 /* NotoSansTamil-Light.ttf in Resources */,
+				3AE0A4672A88024100DF8469 /* gameData.json in Resources */,
+				3AE0A4692A880AA800DF8469 /* developerData.json in Resources */,
+				3AE0A46B2A880C0100DF8469 /* publisherData.json in Resources */,
 				3AE858602A15A0B3008444B3 /* NotoSansTamil-Regular.ttf in Resources */,
 				8FE4950629F8C34E00F8CE2E /* Preview Assets.xcassets in Resources */,
+				3AE0A46D2A880D9200DF8469 /* labelData.json in Resources */,
 				3A41A6242A15990E00D65755 /* NotoSansTamil-ExtraBold.ttf in Resources */,
 				3AE858612A15A0B3008444B3 /* NotoSansTamil-SemiBold.ttf in Resources */,
 				8FE4950329F8C34E00F8CE2E /* Assets.xcassets in Resources */,
+				3AE0A46F2A880EE800DF8469 /* reviewData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +435,7 @@
 				3A5128AA2A2AB411004AE117 /* Review.swift in Sources */,
 				3A0C8D222A24015100ED9C9C /* CurationDescription.swift in Sources */,
 				3A4517A82A250088006C0156 /* PurchaseButton.swift in Sources */,
-				3A0C8D202A24004A00ED9C9C /* CommonBanner.swift in Sources */,
+				3A0C8D202A24004A00ED9C9C /* Banner.swift in Sources */,
 				3A5128A22A2AB177004AE117 /* Developer.swift in Sources */,
 				3A5128A82A2AB388004AE117 /* Label.swift in Sources */,
 				3A5128A42A2AB21A004AE117 /* Publisher.swift in Sources */,
@@ -419,6 +450,7 @@
 				3A51289E2A2974C2004AE117 /* User.swift in Sources */,
 				3AE0A45E2A83125400DF8469 /* ShopView.swift in Sources */,
 				3A5128A62A2AB308004AE117 /* Media.swift in Sources */,
+				3AE0A4642A88013500DF8469 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

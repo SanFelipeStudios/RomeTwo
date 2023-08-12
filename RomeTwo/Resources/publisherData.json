@@ -1,0 +1,92 @@
+[
+    {
+      "id": "9F870DBF-657A-414F-A28A-43D07961E614",
+      "name": "Stellar Publishing",
+      "summary": "Stellar Publishing is a leading name in the gaming industry, known for its commitment to delivering high-quality and diverse gaming experiences to players of all ages. With a portfolio that spans across genres and platforms, Stellar Publishing has established itself as a powerhouse in curating captivating narratives and engaging gameplay. From heart-pounding action titles to thought-provoking adventures, their games resonate with a global audience, making Stellar Publishing a driving force in the world of interactive entertainment.",
+      "games": [
+        "7E55F479-96B3-41A0-AF8C-F0F4A7B5E44D",
+        "3A92FDBC-238B-4D12-B5DB-98FEA7FCA6E7"
+      ]
+    },
+    {
+      "id": "E3713325-73E7-4C2A-B9D7-0A8C43818734",
+      "name": "Nebula Entertainment",
+      "summary": "Nebula Entertainment is a premier publisher dedicated to curating and delivering exceptional gaming experiences that leave a lasting impact. With an unwavering commitment to quality and innovation, Nebula Entertainment has consistently collaborated with top-tier developers to produce titles that push creative boundaries and resonate with players' emotions. Their diverse range of games, from whimsical adventures to adrenaline-pumping thrillers, ensures that players of all tastes can find a masterpiece under the Nebula Entertainment banner.",
+      "games": [
+        "C67FAEBB-AB97-4FD4-85BF-FCEC48525659",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "FD6EB29F-332A-4710-97FF-8FA28980EF06",
+      "name": "Arcane Studios",
+      "summary": "Arcane Studios is a trailblazing publisher known for its commitment to fostering creativity and innovation within the gaming industry. With a passion for curating captivating narratives and nurturing unique gameplay mechanics, Arcane Studios partners with visionary developers to bring extraordinary visions to life. From indie gems to blockbuster hits, their diverse portfolio showcases a dedication to pushing the boundaries of interactive storytelling and entertainment.",
+      "games": [
+        "57D567EF-652D-473B-8A68-462FC547902B",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "C9F75A2C-C557-40E6-93B5-DF2BF06F130A",
+      "name": "Galactic Ventures",
+      "summary": "Galactic Ventures is a publisher that specializes in curating out-of-this-world gaming experiences that transport players to new dimensions of imagination. With a focus on innovative gameplay mechanics and cutting-edge technology, Galactic Ventures partners with visionary developers to create titles that push the boundaries of what's possible in interactive entertainment. From exploring alien landscapes to conquering cosmic challenges, their games offer an exhilarating escape to the far reaches of the universe.",
+      "games": [
+        "F7F77C5C-1BC7-47E1-A3C0-2F578B695D8A",
+        "2B6DB3E8-A4E0-442B-BAC4-489AA8DFCBB2"
+      ]
+    },
+    {
+      "id": "3A3BDF75-15C2-4329-950A-1B0D504FC465",
+      "name": "Celestial Games",
+      "summary": "Celestial Games is a publisher that crafts gaming experiences that transcend the ordinary and venture into the extraordinary. With a commitment to fostering creativity and originality, Celestial Games partners with talented developers to create titles that captivate players with their unique mechanics and thought-provoking narratives. From exploring the cosmos to delving into the depths of the human psyche, their games offer an exploration of the universe, both outer and inner.",
+      "games": [
+        "1B495A8B-CADA-4E97-99B9-3454FFB70D1B",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "85E184C3-4C8A-4E95-9A19-8DB4B7203E71",
+      "name": "Mystic Realms Publishing",
+      "summary": "Mystic Realms Publishing is a publisher with a passion for curating gaming experiences that transport players to fantastical worlds filled with magic, mystery, and adventure. By collaborating with imaginative developers, Mystic Realms Publishing creates titles that immerse players in richly detailed landscapes and engaging narratives. From embarking on heroic quests to unraveling ancient secrets, their games offer an escape into realms where the extraordinary is an everyday occurrence.",
+      "games": [
+        "6E915C57-5350-42A3-89FA-90D5A4A7E50C",
+        "1B6B95AA-55A5-4D76-8E8A-CBF61FE41704"
+      ]
+    },
+    {
+      "id": "2AB66374-F40D-48E1-92AC-07C35AA11DA1",
+      "name": "Infinity Studios",
+      "summary": "Infinity Studios is a publisher that thrives on delivering gaming experiences that stretch the boundaries of imagination and challenge players to think beyond the ordinary. With a focus on partnering with innovative developers, Infinity Studios produces titles that provoke thought, inspire wonder, and push the envelope of what's possible in interactive entertainment. From mind-bending puzzles to philosophical narratives, their games invite players to explore the limitless possibilities of the human mind.",
+      "games": [
+        "B31C40B6-C6C4-419A-8762-28E0518D098B",
+        "1B495A8B-CADA-4E97-99B9-3454FFB70D1B"
+      ]
+    },
+    {
+      "id": "1B887FA2-0767-42E7-B463-672C88FE2583",
+      "name": "Elysian Publishing",
+      "summary": "Elysian Publishing is a publisher dedicated to curating and delivering gaming experiences that elevate the spirit and inspire wonder. With a portfolio that spans across genres and storytelling styles, Elysian Publishing collaborates with visionary developers to create titles that immerse players in imaginative worlds and thought-provoking narratives. From exploring mythical realms to embarking on emotional journeys, their games offer an escape into realms of beauty and awe.",
+      "games": [
+        "2B6DB3E8-A4E0-442B-BAC4-489AA8DFCBB2",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "05B09E9F-0F51-4CEC-9AA3-60C8B9E2F1B1",
+      "name": "Enchanted Realms Publishing",
+      "summary": "Enchanted Realms Publishing is a publisher that specializes in curating gaming experiences that captivate the imagination and bring enchanting stories to life. With a focus on partnering with developers who craft intricate narratives and immersive gameplay, Enchanted Realms Publishing creates titles that transport players to magical worlds where wonder and adventure await. From solving ancient riddles to forging legendary alliances, their games invite players to embark on extraordinary quests.",
+      "games": [
+        "F7F77C5C-1BC7-47E1-A3C0-2F578B695D8A",
+        "1B6B95AA-55A5-4D76-8E8A-CBF61FE41704"
+      ]
+    },
+    {
+      "id": "D7FABE48-55F1-4C06-9C86-C3A249B9F147",
+      "name": "Voyager Studios",
+      "summary": "Voyager Studios is a publisher that invites players on epic journeys through captivating narratives and immersive gameplay. By collaborating with innovative developers, Voyager Studios produces titles that challenge players' perceptions and engage their emotions. From exploring uncharted territories to uncovering hidden truths, their games offer an exploration of the human experience in all its complexity, making Voyager Studios a beacon for curious and adventurous players.",
+      "games": [
+        "C67FAEBB-AB97-4FD4-85BF-FCEC48525659",
+        "1B6B95AA-55A5-4D76-8E8A-CBF61FE41704"
+      ]
+    }
+]

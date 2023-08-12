@@ -1,0 +1,93 @@
+[
+    {
+      "id": "E73E0B56-9F08-4ED0-8A59-4C6926B3C47A",
+      "name": "Action",
+      "summary": "The Action genre is known for its heart-pounding excitement, fast-paced gameplay, and adrenaline-fueled experiences. Action games immerse players in intense combat scenarios, challenging them to react quickly and strategically to enemies and obstacles. From epic battles to explosive gunfights, Action games deliver instant gratification and keep players on the edge of their seats as they navigate through dynamic worlds filled with danger and thrills.",
+      "games": [
+        "7E55F479-96B3-41A0-AF8C-F0F4A7B5E44D",
+        "3A92FDBC-238B-4D12-B5DB-98FEA7FCA6E7"
+      ]
+    },
+    {
+      "id": "5EF5AE98-7AC3-4CA7-9F02-59BEE4C216E0",
+      "name": "Role-Playing Game (RPG)",
+      "summary": "Role-Playing Games (RPGs) invite players to embark on epic quests as they assume the roles of diverse characters within richly developed worlds. RPGs are characterized by deep narratives, character customization, and decision-making that impacts the story. Players can explore vast landscapes, engage in strategic battles, and shape the fates of their avatars and the game's universe. Whether delving into high fantasy realms or dystopian futures, RPGs provide a captivating blend of storytelling and immersive gameplay.",
+      "games": [
+        "C67FAEBB-AB97-4FD4-85BF-FCEC48525659",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "5C77B2CC-9A5C-428D-BB39-3A735AA9B16F",
+      "name": "Adventure",
+      "summary": "Adventure games invite players to explore imaginative worlds, solve intricate puzzles, and unravel compelling narratives. These games emphasize storytelling, often immersing players in captivating mysteries, quests, and character-driven experiences. Adventure games can span a wide range of themes, from historical epics to supernatural mysteries, offering players the opportunity to engage their intellect and creativity as they uncover secrets and shape the outcomes of the unfolding story.",
+      "games": [
+        "57D567EF-652D-473B-8A68-462FC547902B",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "A50C54AC-B8C7-4A4A-9D47-F2E3E03FD4C6",
+      "name": "Open World",
+      "summary": "Open World games offer vast, interconnected landscapes for players to explore at their own pace. These games provide a sense of freedom and immersion, allowing players to roam diverse environments, engage in various activities, and uncover hidden treasures. Open World games often emphasize player agency, enabling them to pursue main storylines or indulge in side quests, crafting, and exploration. With a focus on discovery and autonomy, Open World games create dynamic and memorable gaming experiences.",
+      "games": [
+        "F7F77C5C-1BC7-47E1-A3C0-2F578B695D8A",
+        "2B6DB3E8-A4E0-442B-BAC4-489AA8DFCBB2"
+      ]
+    },
+    {
+      "id": "EFC2B78D-1E5B-4E29-B83D-3155F858AA44",
+      "name": "Survival Horror",
+      "summary": "Survival Horror games deliver spine-chilling experiences that test players' nerves and resourcefulness in the face of terrifying challenges. Set in eerie, atmospheric environments, these games often feature limited resources and menacing foes, encouraging players to use their wits to survive. Survival Horror games aim to evoke fear and suspense, immersing players in tense narratives that demand careful decision-making and strategic planning to navigate the horrors that await.",
+      "games": [
+        "1B495A8B-CADA-4E97-99B9-3454FFB70D1B",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "F66C6053-5D8A-4BF4-A726-79B9326E78D1",
+      "name": "Roguelike",
+      "summary": "Roguelike games challenge players with procedurally generated levels, permadeath mechanics, and a strong emphasis on strategy and exploration. In these games, players must adapt to ever-changing environments and test their skills against formidable enemies. The thrill of uncovering new challenges and discovering rare items drives the gameplay loop, offering a sense of accomplishment and progression. Roguelike games provide a unique blend of tension and strategy, making each playthrough a distinct and rewarding experience.",
+      "games": [
+        "6E915C57-5350-42A3-89FA-90D5A4A7E50C",
+        "1B6B95AA-55A5-4D76-8E8A-CBF61FE41704"
+      ]
+    },
+    {
+      "id": "DAA14146-1FAC-4A48-B38A-0B358DC87D79",
+      "name": "Simulation",
+      "summary": "Simulation games offer players the opportunity to immerse themselves in realistic or fantastical scenarios, where they can control and influence various aspects of the simulated world. Whether managing cities, building civilizations, or piloting vehicles, Simulation games provide a sandbox for players to experiment, strategize, and create. These games often offer a relaxing and meditative experience, encouraging players to explore the mechanics and intricacies of their chosen simulations.",
+      "games": [
+        "2B6DB3E8-A4E0-442B-BAC4-489AA8DFCBB2",
+        "D3C6B97B-995C-4C3B-AE95-AC65347632B2"
+      ]
+    },
+    {
+      "id": "36167D34-55A0-4B38-A4C4-C319674650D5",
+      "name": "Strategy",
+      "summary": "Strategy games challenge players to think critically and strategically as they make decisions that impact the outcomes of complex scenarios. From commanding armies in epic battles to building empires and managing resources, Strategy games offer diverse gameplay experiences that require careful planning and foresight. These games often test players' ability to balance short-term goals with long-term objectives, creating engaging and intellectually stimulating gameplay.",
+      "games": [
+        "B31C40B6-C6C4-419A-8762-28E0518D098B",
+        "1B6B95AA-55A5-4D76-8E8A-CBF61FE41704"
+      ]
+    },
+    {
+      "id": "4C0A99EB-1D1B-49C3-B0E4-DF0F89F8F477",
+      "name": "Platformer",
+      "summary": "Platformer games challenge players' timing, precision, and coordination as they navigate through side-scrolling or 3D environments filled with obstacles and puzzles. These games often feature dynamic movement mechanics, requiring players to jump, run, and interact with their surroundings to progress. Platformer games come in a variety of styles, from classic 2D adventures to modern 3D explorations, providing players with engaging and exhilarating gameplay experiences.",
+      "games": [
+        "F7F77C5C-1BC7-47E1-A3C0-2F578B695D8A",
+        "2B6DB3E8-A4E0-442B-BAC4-489AA8DFCBB2"
+      ]
+    },
+    {
+      "id": "5E1387B1-84C9-4AA2-B097-67234D431A0B",
+      "name": "Sports",
+      "summary": "Sports games recreate the excitement and competitive spirit of real-world sports, allowing players to take on the roles of athletes, coaches, or managers. These games offer realistic or arcade-style gameplay mechanics that capture the essence of various sports, from soccer and basketball to racing and extreme sports. Sports games provide players with the opportunity to experience the thrill of victory, the agony of defeat, and the camaraderie that comes with friendly competition.",
+      "games": [
+        "C67FAEBB-AB97-4FD4-85BF-FCEC48525659",
+        "1B6B95AA-55A5-4D76-8E8A-CBF61FE41704"
+      ]
+    }
+
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "7E55F479-96B3-41A0-AF8C-F0F4A7B5E44D",
+    "title": "Sample App 1",
+    "summary": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
+    "price": 2.99,
+    "hasInAppPurchases": true,
+    "releaseDate": "2023-08-10T12:00:00Z",
+    "developerId": "B940F51A-B86C-45FA-B2DA-08E0E75F51AA",
+    "publisherId": "6DA682AC-C577-4A45-9D74-651A25C6D5DB",
+    "labels": [
+      "3A3BDF75-15C2-4329-950A-1B0D504FC465",
+      "8C3328A0-29E9-4825-BB7B-F6F14B5C22AC"
+    ],
+    "media": [
+      "E7F3617F-364A-4FE0-8D6C-2AFCFF2C0D87",
+      "1F1776B0-78E2-4F50-8DF7-45633A5A9B9A"
+    ]
+  },
+  {
+    "id": "A8D63A0F-7DF3-4FA4-97F1-46C6E8873A14",
+    "title": "Sample App 2",
+    "summary": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
+    "price": 0.99,
+    "hasInAppPurchases": false,
+    "releaseDate": "2023-07-15T09:30:00Z",
+    "developerId": "1FCE9B50-7E2F-4992-B4CB-9D23774F8B42",
+    "publisherId": "397E912B-748B-4A23-B13B-05E8B70DE13E",
+    "labels": [
+      "3DB207D5-CF8D-4DF0-BD58-C7817D73557C",
+      "B8C7A3A2-CD0D-4F6B-BDC5-67444A9C7431"
+    ],
+    "media": [
+      "5441DD4B-13FC-43C5-81D0-CD69F2DAF915",
+      "87D99113-6F39-45C1-B0EB-0844325C0C68"
+    ]
+  },
+  {
+    "id": "3A92FDBC-238B-4D12-B5DB-98FEA7FCA6E7",
+    "title": "Awesome Game",
+    "summary": "Embark on an unforgettable journey with Awesome Game, a captivating adventure that transports you to a realm of magic and heroism. As a valiant hero, you must thwart the forces of darkness and restore harmony to a war-torn kingdom. Engage in epic battles, solve intricate puzzles, and uncover the mysteries that shroud this enchanting world. With its intricate storyline, breathtaking visuals, and dynamic gameplay mechanics, Awesome Game guarantees an immersive gaming experience that will keep you engaged for hours on end.",
+    "price": 4.99,
+    "hasInAppPurchases": true,
+    "releaseDate": "2023-06-20T15:45:00Z",
+    "developerId": "92F84FE2-BC2E-475B-B728-C50FE9F53EEF",
+    "publisherId": "4D6B3E18-DBD7-42CE-8C90-5B4DAA562963",
+    "labels": [
+      "C76EF7C1-05B7-4C12-B9F2-065DCCA25DE9",
+      "3A15E6FC-77D4-45B7-9A8C-4D052B8B5D5A"
+    ],
+    "media": [
+      "8EF96148-46F2-4562-992F-BEBE9EAF429E",
+      "D7A4B2D9-1B9C-45A6-B870-CBEAAEBC4B8A"
+    ]
+  },
+  {
+    "id": "C67FAEBB-AB97-4FD4-85BF-FCEC48525659",
+    "title": "Fitness Tracker",
+    "summary": "Elevate your fitness journey with Fitness Tracker, an all-inclusive app designed to empower and motivate you on your path to wellness. Seamlessly track your workouts, monitor your progress, and set achievable goals with ease. Whether you're a seasoned athlete or just starting your fitness routine, Fitness Tracker offers a comprehensive suite of tools to support your endeavors. With its intuitive interface, personalized recommendations, and real-time feedback, achieving your fitness aspirations has never been more accessible and rewarding.",
+    "price": 1.49,
+    "hasInAppPurchases": true,
+    "releaseDate": "2023-04-12T08:15:00Z",
+    "developerId": "4DF4A17D-EC8E-42E0-89FD-C39A2A456B4E",
+    "publisherId": "7B763E5E-2D35-4F84-9403-CD2ECC3DD331",
+    "labels": [
+      "B2C4A4A5-EC9F-4B14-9C74-20E5B65E076C",
+      "5A5C3F27-309C-4B68-A9C7-33E3E0381DE2"
+    ],
+    "media": [
+      "FDE1657D-07A4-42C9-B1C9-831C7B7A25DB",
+      "2EF786EF-8C40-4A02-9C6E-E9134AC3B103"
+    ]
+  },
+  {
+    "id": "57D567EF-652D-473B-8A68-462FC547902B",
+    "title": "Photo Editor Pro",
+    "summary": "Transform your ordinary snapshots into masterpieces with Photo Editor Pro, a powerful editing tool that puts the art of photography at your fingertips. Explore a plethora of advanced filters, intricate effects, and precise adjustments to enhance your images in creative and stunning ways. Whether you're a photography enthusiast or simply want to add flair to your social media posts, Photo Editor Pro offers a user-friendly interface and professional-grade features. Elevate your visual storytelling and create captivating visuals that leave a lasting impression.",
+    "price": 0.99,
+    "hasInAppPurchases": true,
+    "releaseDate": "2023-02-28T14:20:00Z",
+    "developerId": "E5A315E0-C8F7-4E6B-84F6-10DDC9CC7E9D",
+    "publisherId": "7A715741-DCAC-4F2D-89F6-F6804183FF2A",
+    "labels": [
+      "2B6DB3E8-A4E0-442B-BAC4-489AA8DFCBB2",
+      "F7F77C5C-1BC7-47E1-A3C0-2F578B695D8A"
+    ],
+    "media": [
+      "D4A6D5C1-97C5-4BAA-B7BF-9B86BF28D971",
+      "5270DFC2-2DF7-4FEC-8C79-38ECE35F3283"
+    ]
+  },
+  {
+    "id": "D3C6B97B-995C-4C3B-AE95-AC65347632B2",
+    "title": "Puzzle Mania",
+    "summary": "Challenge your intellect and sharpen your problem-solving skills with Puzzle Mania, an addictive puzzler that guarantees hours of brain-teasing fun. Navigate through a diverse array of mind-bending puzzles, each designed to test your logic, creativity, and lateral thinking. From intricate mazes to complex riddles, Puzzle Mania offers an eclectic mix of challenges suitable for players of all ages. With its engaging gameplay and progressively challenging levels, this app is a must-have for anyone seeking mental stimulation and entertainment.",
+    "price": 0.99,
+    "hasInAppPurchases": false,
+    "releaseDate": "2023-01-10T10:45:00Z",
+    "developerId": "6F62A2C2-8970-41E6-BA79-E97D2F5BCC04",
+    "publisherId": "18A04DF0-7393-42E1-A723-5DFF3DE1E982",
+    "labels": [
+      "D6E90A6D-6C97-4844-B2B5-39B063A816AE",
+      "1B495A8B-CADA-4E97-99B9-3454FFB70D1B"
+    ],
+    "media": [
+      "84E59204-CAB0-4341-9F33-8334C97A6E4B",
+      "17D80BB5-38C4-4511-B616-59D19961634B"
+    ]
+  },
+  {
+    "id": "18A04DF0-7393-42E1-A723-5DFF3DE1E982",
+    "title": "Recipe Book",
+    "summary": "Delve into a culinary adventure with Recipe Book, an indispensable resource that transforms cooking into a delightful experience. Explore an extensive collection of mouthwatering recipes from diverse cuisines around the world. From savory main courses to delectable desserts, Recipe Book guides you through step-by-step instructions, pro tips, and ingredient lists that ensure your culinary creations are a resounding success. Elevate your cooking skills, impress your guests, and embark on a gastronomic journey that tantalizes the taste buds and awakens your inner chef.",
+    "price": 2.49,
+    "hasInAppPurchases": true,
+    "releaseDate": "2023-03-25T17:30:00Z",
+    "developerId": "B31C40B6-C6C4-419A-8762-28E0518D098B",
+    "publisherId": "0FEFEC88-7FD1-4E49-9789-635897D2CDD3",
+    "labels": [
+      "C67FAEBB-AB97-4FD4-85BF-FCEC48525659",
+      "63F15B8A-897D-40D2-97F7-4BEC2491AC04"
+    ],
+    "media": [
+      "5A4E82E6-188C-4F09-B6C2-651CC6A1B99A",
+      "B31C40B6-C6C4-419A-8762-28E0518D098B"
+    ]
+  },
+  {
+    "id": "E6ACED64-4A8B-479F-9A79-BC4807C6B772",
+    "title": "Weather Forecast",
+    "summary": "Stay informed and make informed decisions with Weather Forecast, your reliable companion for accurate weather predictions. Plan your outdoor activities with confidence as you receive up-to-the-minute updates on temperature, precipitation, and atmospheric conditions. Whether you're an outdoor enthusiast, a traveler, or simply want to stay ahead of weather fluctuations, Weather Forecast provides a user-friendly interface and detailed insights. Equip yourself with the knowledge you need to navigate changing weather patterns effortlessly.",
+    "price": 0.99,
+    "hasInAppPurchases": false,
+    "releaseDate": "2023-05-08T11:00:00Z",
+    "developerId": "5DDE5A43-3C54-4267-9E48-FBD83D05EAD5",
+    "publisherId": "BE1EF356-0BCE-47DA-AB86-0D74C907C4AC",
+    "labels": [
+      "84E59204-CAB0-4341-9F33-8334C97A6E4B",
+      "1B887FA2-0767-42E7-B463-672C88FE2583"
+    ],
+    "media": [
+      "AF575038-87A3-41CB-A6B3-4B4A4EB63DA5",
+      "C1B88A2C-B9C6-4FD9-94EF-0A7F3DE2E97A"
+    ]
+  },
+  {
+    "id": "2B6DB3E8-A4E0-442B-BAC4-489AA8DFCBB2",
+    "title": "Language Learning",
+    "summary": "Embark on a language-learning journey like no other with Language Learning, a comprehensive app designed to immerse you in the world of foreign languages. Explore interactive lessons, immersive quizzes, and real-world scenarios that facilitate natural language acquisition. From vocabulary building to mastering complex grammar rules, Language Learning offers a tailored curriculum for learners of all proficiency levels. Expand your cultural horizons, enhance your communication skills, and unlock a world of opportunities through the joy of multilingualism.",
+    "price": 3.99,
+    "hasInAppPurchases": true,
+    "releaseDate": "2023-09-05T14:10:00Z",
+    "developerId": "7CB784B5-2825-4B82-B642-76E4716933A6",
+    "publisherId": "B2C4A4A5-EC9F-4B14-9C74-20E5B65E076C",
+    "labels": [
+      "92F84FE2-BC2E-475B-B728-C50FE9F53EEF",
+      "4DF4A17D-EC8E-42E0-89FD-C39A2A456B4E"
+    ],
+    "media": [
+      "6E915C57-5350-42A3-89FA-90D5A4A7E50C",
+      "1B6B95AA-55A5-4D76-8E8A-CBF61FE41704"
+    ]
+  },
+  {
+    "id": "F7F77C5C-1BC7-47E1-A3C0-2F578B695D8A",
+    "title": "Note-taking App",
+    "summary": "Capture your thoughts, ideas, and inspirations seamlessly with Note-taking App, a versatile tool that empowers you to organize and express yourself effortlessly. From lecture notes to creative sketches, this app provides a digital canvas to document your insights in a dynamic and intuitive manner. Customize your notes with fonts, colors, and multimedia elements to create visually appealing and engaging content. Whether you're a student, artist, or professional, Note-taking App is the ideal companion for staying organized, creative, and inspired.",
+    "price": 1.99,
+    "hasInAppPurchases": false,
+    "releaseDate": "2023-11-18T16:45:00Z",
+    "developerId": "EFEA15AC-69C2-4F47-95F6-7A057F8D5B07",
+    "publisherId": "3A3BDF75-15C2-4329-950A-1B0D504FC465",
+    "labels": [
+      "18A04DF0-7393-42E1-A723-5DFF3DE1E982",
+      "5DDE5A43-3C54-4267-9E48-FBD83D05EAD5"
+    ],
+    "media": [
+      "2EF786EF-8C40-4A02-9C6E-E9134AC3B103",
+      "FDE1657D-07A4-42C9-B1C9-831C7B7A25DB"
+    ]
+  }
+]

@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Game {
+// Adding Codable conformance makes it easier to move data between the structure and a data file
+struct Game: Hashable, Codable, Identifiable {
     var id = UUID()
     
     var title: String
@@ -28,7 +29,7 @@ struct Game {
     var labels: Array<UUID>
     
     // List of media ids
-    var media: Array<Media>
+    var media: Array<UUID>
     
 }
 
