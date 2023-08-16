@@ -8,7 +8,8 @@
 import Foundation
 
 struct User {
-    var id = UUID()
+    // UUID
+    var id: String
     
     var username: String
     
@@ -23,13 +24,13 @@ struct User {
     var addresses: Array<Address>
     
     // List of Game Ids
-    var library: Array<UUID>
+    var library: Array<String>
     
     // List of Game Ids
-    var cart: Array<UUID>
+    var cart: Array<String>
     
     // List of Game Ids
-    var wishlist: Array<UUID>
+    var wishlist: Array<String>
     
 //     TODO: Implement Objects
 //    @Persisted var payment: List<Object>

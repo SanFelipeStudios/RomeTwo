@@ -8,11 +8,14 @@
 import Foundation
 
 struct Review: Hashable, Codable, Identifiable {
-    var id = UUID()
+    // UUID
+    var id: String
     
-    var userId: UUID
+    // User Id
+    var userId: String
     
-    var gameId: UUID
+    // Game Id
+    var gameId: String
     
     var title: String
     

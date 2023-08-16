@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Media {
-    var id = UUID()
+struct Media: Hashable, Codable, Identifiable {
+    // UUID
+    var id: String
     
     var name: String
     
@@ -16,3 +17,19 @@ struct Media {
     
     var url: String
 }
+
+//struct Media2 {
+//    var id: String
+//    
+//    var headerImg: String
+//    
+//    var iconImg: String
+//    
+//    var headerVideo: String
+//    
+//    var videos: String
+//    
+//    var images:  String
+//    
+//    var gameId: String
+//}

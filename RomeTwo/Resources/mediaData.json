@@ -1,0 +1,62 @@
+[
+    {
+      "id": "A9C245F1-8963-42A6-9B8A-71C12D91C206",
+      "name": "Official Trailer",
+      "type": "Image",
+      "url": "HadesIcon"
+    },
+    {
+      "id": "B8E09E5B-92E1-4C31-AD4F-67936E5476A2",
+      "name": "Concept Art",
+      "type": "Image",
+      "url": "HadesIcon"
+    },
+    {
+      "id": "DC7B89EB-6A54-4D4D-97E9-3D4A3B8DB27F",
+      "name": "Soundtrack Preview",
+      "type": "Image",
+      "url": "HadesIcon"
+    },
+    {
+      "id": "75E91A1B-A68F-446E-8C75-155C363E05D2",
+      "name": "Behind-the-Scenes Documentary",
+      "type": "Video",
+      "url": "HadesIcon"
+    },
+    {
+      "id": "9F38D51C-99FA-44C2-BCF3-0E8D0E6D46A0",
+      "name": "Environment Concept Art",
+      "type": "Image",
+      "url": "https://example.com/environment_concept.jpg"
+    },
+    {
+      "id": "B20A038C-6599-4D82-84D3-AE1439A30F6E",
+      "name": "Game Logo",
+      "type": "Image",
+      "url": "https://example.com/game_logo.png"
+    },
+    {
+      "id": "F725B2EE-788B-488D-B2D6-61D9DAEECE10",
+      "name": "Developer Interview",
+      "type": "Video",
+      "url": "https://example.com/developer_interview.mp4"
+    },
+    {
+      "id": "0BAA7B32-065F-4865-A348-7F0DEBDF8779",
+      "name": "Game Artbook",
+      "type": "Document",
+      "url": "https://example.com/game_artbook.pdf"
+    },
+    {
+      "id": "32916E20-55C9-49A1-8413-0632E3C35E7D",
+      "name": "Game Merchandise",
+      "type": "Image",
+      "url": "https://example.com/game_merch.jpg"
+    },
+    {
+      "id": "B0D65EBE-0C8F-4BC0-B3F4-6E8D68814B75",
+      "name": "Soundtrack Album",
+      "type": "Audio",
+      "url": "https://example.com/soundtrack_album.zip"
+    }
+]

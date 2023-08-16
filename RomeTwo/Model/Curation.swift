@@ -7,10 +7,12 @@
 
 import Foundation
 
-struct Curation {
-    var id = UUID()
+struct Curation: Hashable, Codable, Identifiable {
+    // UUID
+    var id: String
     
-    var gameId: UUID
+    // UUID
+    var gameId: String
     
     var heading: String
     

@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Territory {
-    var id = UUID()
+struct Territory: Hashable, Codable, Identifiable {
+    // UUID
+    var id: String
     
     var name: String
     

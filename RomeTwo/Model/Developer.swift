@@ -8,12 +8,13 @@
 import Foundation
 
 struct Developer: Hashable, Codable, Identifiable {
-    var id = UUID()
+    var id: String
     
     var name: String
     
     var summary: String
     
-    var games: Array<UUID>
+    // List of Game Ids
+    var games: Array<String>
     
 }

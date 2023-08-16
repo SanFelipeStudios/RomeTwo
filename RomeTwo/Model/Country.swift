@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Country {
-    var id = UUID()
+struct Country: Hashable, Codable, Identifiable {
+    // UUID
+    var id: String
     
     var name: String
     

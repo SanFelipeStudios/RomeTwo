@@ -4,7 +4,8 @@ import SwiftUI
 struct RomeTwoApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            ShopView()
+            GameList()
+//            ShopView()
 //            CurationView()
         }
     }

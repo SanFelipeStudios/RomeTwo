@@ -9,13 +9,12 @@ import Foundation
 
 import Combine
 
-final class ModelData: ObservableObject {
-    @Published var games: [Game] = load("gameData.json")
-    @Published var developers: [Developer] = load("developerData.json")
-    @Published var publishers: [Publisher] = load("publisherData.json")
-    @Published var labels: [Label] = load("labelData.json")
-    @Published var reviews: [Review] = load("reviewData.json")
-}
+var games: [Game] = load("gameData.json")
+var developers: [Developer] = load("developerData.json")
+var publishers: [Publisher] = load("publisherData.json")
+var labels: [Label] = load("labelData.json")
+var reviews: [Review] = load("reviewData.json")
+var media: [Media] = load("mediaData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
 
